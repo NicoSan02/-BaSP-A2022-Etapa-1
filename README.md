@@ -10,4 +10,5 @@ Trackgenix uses a system of categorized users that allows for better resource ma
 This system also records hours of work, making it easier to generate reports.
 ```
 ## Author 
-Radium Rocket
+Nicolás San Martín
+ⓒ Radium Rocket

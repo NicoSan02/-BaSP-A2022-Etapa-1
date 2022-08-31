@@ -12,8 +12,9 @@ This system also records hours of work, making it easier to generate reports.
 
 ## How to open
 ```
-1- Access to the folder "Semana-02"
-2- Open the file "index.html" on your browser
+1- Download folder from repository.
+2- Access to the folder "Semana-02".
+3- Open the file "index.html" on your browser.
 ```
 
 ## Tech

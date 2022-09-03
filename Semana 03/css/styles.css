@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-/*@font-face {
+@font-face {
     font-family: roboto-italic;
     src: url(.\fonts\roboto-italic.ttf);
     font-family: roboto-bold;
@@ -12,7 +12,7 @@
     src: url(.\fonts\roboto-medium.ttf); 
     font-family: rokkit-medium;
     src: url(.\fonts\rokkitt-medium.ttf);
-}*/
+}
 h1 {
     align-content: center; /*not working*/
 }
@@ -56,23 +56,29 @@ body {
 }
 .nav1 a {
     padding: 6px 8px 6px 16px;
-    text-decoration: not workingne;
+    text-decoration: none;
     font-size: 24px;
     color: white;
     display: block;
 }
 .nav1 a:hover {
     color: black;
-  }
-
+}
+#nav-middle {
+    margin-top: 130px;
+}
+#nav-bottom {
+    margin-top: 130px;
+}
 #img-home {
     /*display: block;*/
     float: left;
-
+    padding-left: 60px;
 }
 .paragraph-space {
     margin-top: 30px;
     margin-bottom: 30px;
+    text-align: center;
 }
 #home-img-paragraph {
     overflow:auto;
@@ -89,6 +95,11 @@ body {
 #footer-format {
     background-color: #FF0000;
     text-align: center;
+}
+
+#horizontal-ul ul li {
+    display: inline;
+    margin: 30px; 
 }
 .center {
     text-align: center

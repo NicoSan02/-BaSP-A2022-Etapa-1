@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Trackgenix</title>
+        <link rel="stylereset" href=".\css\reset.css">
         <link rel="stylesheet" href=".\css\styles.css">
     </head>
     <body>
@@ -15,13 +16,13 @@
             <aside>
                 <div class="nav1">
                     <nav>  
-                        <img src=".\assets\home-1.svg" alt="Home-icon"><a href="#">Home</a>
+                        <a href="#"><img src=".\assets\home-1.svg" alt="Home-icon">Home</a>
                         <div id="nav-middle">
-                            <img src=".\assets\user-question.svg" alt="Question-icon"><a href="#">Sign Up</a>
-                            <img src=".\assets\user-1.svg" alt="User-icon"><a href="#">Log In</a>
+                            <a href="#"><img src=".\assets\user-question.svg" alt="Question-icon">Sign Up</a>
+                            <a href="#"><img src=".\assets\user-1.svg" alt="User-icon">Log In</a>
                         </div>
                         <div id="nav-bottom">
-                            <img src=".\assets\chevron-circle-right.svg" alt="Contact-icon"><a href="#">Contact</a>
+                            <a href="#"><img src=".\assets\chevron-circle-right.svg" alt="Contact-icon">Contact</a>
                             <p><img src=".\assets\phone.svg" alt="Phone-icon">(000) 000-0000</p>
                             <p><img src=".\assets\mail.svg" alt="Mail-icon">trackgenixsupp@rr.com</p>
                         </div>
@@ -48,10 +49,10 @@
                 <h2 class="rectangle1">Funcionalities</h2>
                 <div class="ul-box">
                     <ul>
-                    <li><img src=".\assets\calendar-clock.svg" alt="Calendar-icon">Record hours</li>
-                    <li><img src=".\assets\calendar-edit.svg" alt="Calendar-icon2">Reports</li>
-                    <li><img src=".\assets\calendar.svg" alt="Calendar-icon3">Resource management</li>
-                    <li><img src=".\assets\calendar-user.svg" alt="Calendar-icon4">Multiple roles</li>
+                    <li><div class="rhombus"><img class="icon-rhombus" src=".\assets\calendar-clock.svg" alt="Calendar-icon"></div>Record hours</li>
+                    <li><div class="rhombus"><img class="icon-rhombus"src=".\assets\calendar-edit.svg" alt="Calendar-icon2"></div>Reports</li>
+                    <li><div class="rhombus"><img class="icon-rhombus"src=".\assets\calendar.svg" alt="Calendar-icon3"></div>Resource management</li>
+                    <li><div class="rhombus"><img class="icon-rhombus"src=".\assets\calendar-user.svg" alt="Calendar-icon4"></div>Multiple roles</li>
                     </ul>
                 </div>
             </section>
@@ -101,7 +102,7 @@
                         </fieldset>
                         <fieldset>    
                             <label for="formmessage">Message</label>
-                            <textarea></textarea>
+                            <textarea rows="6" cols="18"></textarea>
                             <input type="submit" id="formmessage" value="Confirm">
                         </fieldset> 
                     </div>   

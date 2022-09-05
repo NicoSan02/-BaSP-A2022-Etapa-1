@@ -16,11 +16,15 @@ This system also records hours of work, making it easier to generate reports.
 2- Access to the folder "Semana-02".
 3- Open the file "index.html" on your browser.
 ```
-
+## Week 02: Landing page 
+We presented the HTML structure of the app, based on the design made in the first week.
+## Week 03: CSS styling
+Approached the styling of the HTML landing page made the previous week.
 ## Tech
 ```
-Trackgenix uses HTML to run on the browser
+This project uses HTML to run on the browser and CSS for styling.
 ```
+
 ## Author 
 Nicolás San Martín
 ⓒ Radium Rocket

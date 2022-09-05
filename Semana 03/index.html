@@ -47,7 +47,7 @@
             </section>
             <section>
                 <h2 class="rectangle1">Funcionalities</h2>
-                <div class="ul-box">
+                <div class="ul-box1">
                     <ul>
                     <li><div class="rhombus"><img class="icon-rhombus" src=".\assets\calendar-clock.svg" alt="Calendar-icon"></div>Record hours</li>
                     <li><div class="rhombus"><img class="icon-rhombus"src=".\assets\calendar-edit.svg" alt="Calendar-icon2"></div>Reports</li>
@@ -58,7 +58,7 @@
             </section>
             <section>
                 <h2 class="rectangle1">Why using Trackgenix</h2>
-                <div class="ul-box">
+                <div class="ul-box2">
                     <ul>
                         <li><img src=".\assets\trending-up.svg" alt="Arrow-icon">Boost Productivity</li>
                         <p>
@@ -81,7 +81,7 @@
             </section>
             <section>
                 <h2 class="rectangle1">Information request</h2>
-                <form class="center">
+                <form>
                     <div id="form-format">
                         <fieldset>
                             <label for="formname">Name:</label>
@@ -93,17 +93,21 @@
                         </fieldset>
                         <fieldset>    
                             <label for="formcontactarea">Contact area:</label>
-                            <input type="radio" id="hr-dpt" name="formcontactarea">
-                            <label for="contactarea">HR department</label>
-                            <input type="radio" id="systems" name="formcontactarea">
-                            <label for="contactarea">Systems</label>
-                            <input type="radio" id="commercialization" name="formcontactarea">
-                            <label for="contactarea">Commercialization</label>
+                            <div id="radio-text">
+                                <input type="radio" id="hr-dpt" name="formcontactarea">                           
+                                <label for="contactarea">HR department</label>
+                                <input type="radio" id="systems" name="formcontactarea">
+                                <label for="contactarea">Systems</label>
+                                <input type="radio" id="commercialization" name="formcontactarea">
+                                <label for="contactarea">Commercialization</label>
+                            </div>
                         </fieldset>
                         <fieldset>    
                             <label for="formmessage">Message</label>
                             <textarea rows="6" cols="18"></textarea>
-                            <input type="submit" id="formmessage" value="Confirm">
+                            <div>
+                                <input type="submit" id="confirm-button" value="Confirm">
+                            </div>
                         </fieldset> 
                     </div>   
                 </form>

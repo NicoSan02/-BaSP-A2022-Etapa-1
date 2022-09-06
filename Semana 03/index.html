@@ -4,6 +4,12 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap');
+        </style>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@500&display=swap');
+            </style>
         <title>Trackgenix</title>
         <link rel="stylereset" href=".\css\reset.css">
         <link rel="stylesheet" href=".\css\styles.css">
@@ -14,218 +20,186 @@
         </header>
         <main>
             <aside>
-                <div class="nav1">
-                    <nav>  
-                        <a href="#"><img src=".\assets\home-1.svg" alt="Home-icon">Home</a>
-                        <div id="nav-middle">
-                            <a href="#"><img src=".\assets\user-question.svg" alt="Question-icon">Sign Up</a>
-                            <a href="#"><img src=".\assets\user-1.svg" alt="User-icon">Log In</a>
-                        </div>
-                        <div id="nav-bottom">
-                            <a href="#"><img src=".\assets\chevron-circle-right.svg" alt="Contact-icon">Contact</a>
-                            <p><img src=".\assets\phone.svg" alt="Phone-icon">(000) 000-0000</p>
-                            <p><img src=".\assets\mail.svg" alt="Mail-icon">trackgenixsupp@rr.com</p>
-                        </div>
-                    </nav>
-                </div>
+                <nav class="nav1">   
+                    <a class="center" href="#"><img src=".\assets\home-1.svg" alt="Home-icon">Home</a>
+                    <a class="center margin-nav" href="#"><img src=".\assets\user-question.svg" alt="Question-icon">Sign Up</a>
+                    <a class="center" href="#"><img src=".\assets\user-1.svg" alt="User-icon">Log In</a>                   
+                    <a class="center margin-nav" href="#"><img src=".\assets\chevron-circle-right.svg" alt="Contact-icon">Contact</a>
+                    <p class="nav-p"><img src=".\assets\phone.svg" alt="Phone-icon">(000) 000-0000</p>
+                    <p class="nav-p"><img src=".\assets\mail.svg" alt="Mail-icon">trackgenixsupp@rr.com</p>
+                </nav>
             </aside>
             <section>
-                <div class="paragraph-space">
-                    <p>
+                    <p class="paragraph-space">
                         A tool designed to improve productivity and work managment
                     </p>
-                </div>
                 <img src=".\assets\picture.jpg" id="img-home" alt="Woman-working">
-                <div id="home-img-paragraph">
-                    <p>
+                    <p id="home-img-paragraph">
                         Sometimes working with large groups of people can be difficult.
-                    </p>
-                    <p>
                         Trackgenix is a system created to make things easier in cases like that and accomplish your goals in the easiest and fastest way.
                     </p>
-                </div>
             </section>
             <section>
                 <h2 class="rectangle1">Funcionalities</h2>
-                <div class="ul-box1">
-                    <ul>
-                    <li><div class="rhombus"><img class="icon-rhombus" src=".\assets\calendar-clock.svg" alt="Calendar-icon"></div>Record hours</li>
-                    <li><div class="rhombus"><img class="icon-rhombus"src=".\assets\calendar-edit.svg" alt="Calendar-icon2"></div>Reports</li>
-                    <li><div class="rhombus"><img class="icon-rhombus"src=".\assets\calendar.svg" alt="Calendar-icon3"></div>Resource management</li>
-                    <li><div class="rhombus"><img class="icon-rhombus"src=".\assets\calendar-user.svg" alt="Calendar-icon4"></div>Multiple roles</li>
+                    <ul class="ul-box1">
+                        <li><img class="func-img" src=".\assets\calendar-clock.png" alt="Calendar-icon"><p>Record hours</p></li>
+                        <li><img class="func-img" src=".\assets\calendar-edit.png" alt="Calendar-icon2">Reports</li>
+                        <li><img class="func-img" src=".\assets\calendar.png" alt="Calendar-icon3">Resource management</li>
+                        <li><img class="func-img" src=".\assets\calendar-user.png" alt="Calendar-icon4">Multiple roles</li>
                     </ul>
-                </div>
             </section>
             <section>
                 <h2 class="rectangle1">Why using Trackgenix</h2>
-                <div class="ul-box2">
-                    <ul>
-                        <li><img src=".\assets\trending-up.svg" alt="Arrow-icon">Boost Productivity</li>
-                        <p>
-                            Increase everyone's performance by keeping track of tasks, hours worked, progress made & more in an organized and time effective manner.
-                        </p>
-                        <li><img src=".\assets\calendar-check.svg" alt="Check-icon">Work traceability</li>
-                        <p>
-                            Organize and keep track of your work from anywhere
-                        </p>
-                        <li><img src=".\assets\users.svg" alt="users-icon">Leadership & Team Management</li>
-                        <p>
-                            Manage your team's effort by assigning new proyects, setting deadlines, roles and hourly rates for the members of your team.
-                        </p>
-                        <li><img src=".\assets\circle.svg" alt="Circle-icon">Decision Making</li>
-                        <p>
-                            Improve your decisión making by having access to this valuable information at any time.
-                        </p>
+                    <ul class="ul-box2">
+                        <li><img src=".\assets\trending-up.png" alt="Arrow-icon"><span>Boost Productivity</span>
+                            <p>
+                                Increase everyone's performance by keeping track of tasks, hours worked, progress made & more in an organized and time effective manner.
+                            </p>
+                        </li>
+                        <li><img src=".\assets\calendar-check.png" alt="Check-icon"><span>Work traceability</span>
+                            <p>
+                                Organize and keep track of your work from anywhere
+                            </p>
+                        </li>
+                        <li><img src=".\assets\users.png" alt="users-icon"><span>Leadership & Team Management</span>
+                            <p>
+                                Manage your team's effort by assigning new proyects, setting deadlines, roles and hourly rates for the members of your team.
+                            </p>
+                        </li>
+                        <li><img src=".\assets\arrows.png" alt="Circle-icon"><span>Decision Making</span>
+                            <p>
+                                Improve your decisión making by having access to this valuable information at any time.
+                            </p>
+                        </li>
                     </ul>
-                </div>
             </section>
             <section>
-                <h2 class="rectangle1">Information request</h2>
-                <form>
-                    <div id="form-format">
-                        <fieldset>
-                            <label for="formname">Name:</label>
-                            <input type="text" id="formname" name="formname">
-                        </fieldset>
-                        <fieldset>    
-                            <label for="formemail">Email:</label>
-                            <input type="email" id="formemail" name="formemail">
-                        </fieldset>
-                        <fieldset>    
-                            <label for="formcontactarea">Contact area:</label>
-                            <div id="radio-text">
-                                <input type="radio" id="hr-dpt" name="formcontactarea">                           
-                                <label for="contactarea">HR department</label>
-                                <input type="radio" id="systems" name="formcontactarea">
-                                <label for="contactarea">Systems</label>
-                                <input type="radio" id="commercialization" name="formcontactarea">
-                                <label for="contactarea">Commercialization</label>
-                            </div>
-                        </fieldset>
-                        <fieldset>    
-                            <label for="formmessage">Message</label>
-                            <textarea rows="6" cols="18"></textarea>
-                            <div>
-                                <input type="submit" id="confirm-button" value="Confirm">
-                            </div>
-                        </fieldset> 
-                    </div>   
+                <h2 class="rectangle1" id="info-req">Information request</h2>
+                <form>                  
+                    <fieldset class="name-email">
+                        <label for="formname">Name:</label>
+                        <input type="text" id="formname" name="formname">
+                    </fieldset>
+                    <fieldset class="name-email">    
+                        <label for="formemail">Email:</label>
+                        <input type="email" id="formemail" name="formemail">
+                    </fieldset>
+                    <fieldset>    
+                        <label for="formcontactarea">Contact area:</label>
+                        <section id="radio-text">
+                            <input type="radio" id="hr-dpt" name="formcontactarea">                           
+                            <label for="contactarea">HR department</label>
+                            <input type="radio" id="systems" name="formcontactarea">
+                            <label for="contactarea">Systems</label>
+                            <input type="radio" id="commercialization" name="formcontactarea">
+                            <label for="contactarea">Commercialization</label>
+                        </section>
+                    </fieldset>
+                    <fieldset>    
+                        <label for="formmessage">Message</label>
+                        <textarea rows="6" cols="18"></textarea>
+                        <span>
+                            <input type="submit" id="confirm-button" value="Confirm">
+                        </span>
+                    </fieldset>   
                 </form>
             </section>
-            <section>
+            <section class="boxxxx">
                 <h2 class="rectangle1">History</h2>
-                <div id="box-history">
-                    <span class="box-year">
-                        <div class="year">
-                            <p>
-                                2007
-                            </p>
-                        </div>
-                        <p>
+                <!-- <article id="box-history"> -->
+                    <article class="box-year">
+                        <p class="year">
+                            2007
+                        </p>
+                        <p class="description">
                             We initially began to sell our services in 2007 at the department of Rosario, Argentina.
                         </p>
-                    </span>
-                    <span class="box-year">
-                        <div class="year">
-                            <p>
-                                2011
-                            </p>
-                        </div>
-                            <p>
-                                Since day 1 of our introduction to the market, our model has been to put our clients needs first and to ensure a high level of client satisfaction. For this reason, our business grew rapidly and by the year 2011 we decided it was best to expand our reach to the entire country.
-                            </p>
-                    </span>
-                    <span class="box-year">
-                        <div class="year">
-                            <p>
-                                2014
-                            </p>
-                        </div>
-                            <p>
-                                In Radium Rocket we are constanly pushing the boundaries of whats posible. In the year 2014, we acquired Microsoft Data, Inc., which allowed us to become the worldwide leading developer and provider of technology solutions in the casino industry.
-                            </p>                     
-                    </span>
-                    <span class="box-year">
-                        <div class="year">
-                            <p>
-                                2018
-                            </p>
-                        </div>
-                        <p>
+                    </article>
+                    <article class="box-year">
+                        <p class="year">
+                            2011
+                        </p>
+                        <p class="description">
+                            Since day 1 of our introduction to the market, our model has been to put our clients needs first and to ensure a high level of client satisfaction. For this reason, our business grew rapidly and by the year 2011 we decided it was best to expand our reach to the entire country.
+                        </p>
+                    </article>
+                    <article class="box-year">
+                        <p class="year">
+                            2014
+                        </p>
+                        <p class="description">
+                            In Radium Rocket we are constanly pushing the boundaries of whats posible. In the year 2014, we acquired Microsoft Data, Inc., which allowed us to become the worldwide leading developer and provider of technology solutions in the casino industry.
+                        </p>                     
+                    </article>
+                    <article class="box-year">
+                        <p class="year">
+                            2018
+                        </p>
+                        <p class="description">
                             In 2018, we opened a software development center in Hong Kong, Asia, to supplement our product development efforts. Since then, engineers, designers and developers from all around the world have been putting in the work everyday to advance engeniering discoveries and uncover new technologies  that have singinifcant potential for enterprises with bright and new business ideas.
                         </p>
-                    </span>
-                    <span class="box-year">
-                        <div class="year">
-                            <p>
-                                2021
-                            </p>
-                        </div>
-                        <p>
+                    </article>
+                    <article class="box-year">
+                        <p class="year">
+                            2021
+                        </p>
+                        <p class="description">
                             In 2021, we sold our IT solutions department in regards to the casino industry, and restructured our business model to focus  on a more ethical approach to business.
                         </p>
-                    </span>    
-                    <span class="box-year">
-                        <div class="year">
-                            <p>
-                                2022
-                            </p>
-                        </div>
-                        <p>
+                    </article>    
+                    <article class="box-year">
+                        <p class="year">
+                            2022
+                        </p>
+                        <p class="description">
                             Today, we are focused on providing state-of-the-art, end-to-end solutions that enhance users experiences and allow our customers to promote their brands. This is accomplished by developing and deploying innovative solutions that help enterprises overcome daily challenges which always emerge during digital evolution.
                         </p>
-                    </span>
-                </div>    
+                    </article>
+                <!-- </article>     -->
             </section>
             <section>
-                <div class="last-page-box">
-                    <span>
-                        <h3><img src=".\assets\cart-4.svg" alt="Cart-icon">Products</h3>
-                        <ul>
-                            <li>Funcionalities</li>
-                            <li>Downloads</li>
-                            <li>Integration</li>
-                            <li>Extra</li>
-                        </ul>
-                    </span>
-                    <span>
-                        <h3><img src=".\assets\chart-vertical.svg" alt="Chart-icon">Business</h3>
-                        <ul>                    
-                            <li>About us</li>
-                            <li>Clients</li>
-                            <li>Resource</li>
-                            <li>Blog</li>
-                        </ul>
-                    </span>
-                    <span>
-                        <h3><img src=".\assets\flag-2.svg" alt="Flag-icon">Support</h3>
-                        <ul>                 
-                            <li>Help</li>
-                            <li>Tutorials</li>
-                            <li>API</li>
-                            <li>Contact</li>
-                        </ul>
-                    </span>
-                </div>
+                <table>
+                    <tr>
+                        <th><img src=".\assets\cart-4.svg" alt="Cart-icon">Products</th>
+                        <th><img src=".\assets\chart-vertical.svg" alt="Chart-icon">Business</th>
+                        <th><img src=".\assets\flag-2.svg" alt="Flag-icon">Support</th>
+                    </tr>
+                    <tr>
+                        <td>Funcionalities</td>
+                        <td>About us</td>
+                        <td>Help</td>
+                    </tr>
+                    <tr>
+                        <td>Downloads</td>
+                        <td>Clients</td>
+                        <td>Tutorials</td>    
+                    </tr>
+                    <tr>
+                        <td>Integration</td>
+                        <td>Resource</td>
+                        <td>API</td>    
+                    </tr>
+                    <tr>
+                        <td>Extra</td>
+                        <td>Blog</td>
+                        <td>Contact</td>    
+                    </tr>
+                </table>                                 
             </section>
         </main>
-        <footer>
-            <div id="footer-format">
-                <div id="horizontal-ul">
+        <footer id="horizontal-ul">
                     <ul>
                         <li><a href="#"><img src=".\assets\face.svg" alt="Facebook"></a></li>
                         <li><a href="#"><img src=".\assets\tw.svg" alt="Twitter"></a></li>
                         <li><a href="#"><img src=".\assets\lnkdn.svg" alt="Linkedin"></a></li>
                         <li><a href="#"><img src=".\assets\inst.svg" alt="Instagram"></a></li>
                     </ul>
-                </div>
                 <p>
                     Rosario, Argentina
                 </p>
                 <p>
                     Copyright 2022 Radium Rocket. All rights reserved
                 </p>
-            </div>
         </footer>
     </body>
 </html>

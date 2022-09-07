@@ -4,55 +4,90 @@
     font-family: 'Roboto', sans-serif;
 }
 h1 {
+    margin-left: 35px;
     color: white;
     text-align: center;
-    margin-left: 35px;
 }
 h2 {
     text-align: center;
     color: white;
-}
-.rectangle1 {
-    border: 2px solid #FF0000;
-    background-color: #FF0000;
-    text-align: center;
-    align-self: center;
-    display: inline-block;
-    margin: 40px 250px; 
-    width: 50%;
-    padding: 10px; 
-}
-header .rectangle1 {
-    margin-left: 430px;
-    margin-right: 0;
 }
 main {
     padding-left: 250px;
     align-items: center;
 }
 body {
+    margin: 0;
     background-color: white;
     color: black;
+}
+form {
+    width: 737px;
+    height: 439px;
+    margin-left: 130px;
+    background-color: #E5E5E5;
+    border-style: none;
+    align-self: center;
+}
+form input {
+   width: 50%;
+   border: none;
+}
+form label {
+    font-weight: bold;
+    font-size: 22px;
+}
+fieldset {
+    border: none;
+}
+form textarea {
+    width: 255px;
+    height: 136px;
+    margin-left: 220px;
+    border: none;
+}
+footer {
+    width: 100%;
     margin: 0;
+    padding-top: 20px;
+    background-color: #FF0000;
+    font-family: 'Rokkitt', serif;
+    font-size: 28px;
+    text-align: center;
+    color: white;
+}
+.title-box {
+    display: inline-block;
+    margin: 40px 250px; 
+    width: 50%;
+    padding: 10px; 
+    border: 2px solid #FF0000;
+    background-color: #FF0000;
+    text-align: center;
+    align-self: center; 
+}
+header .title-box {
+    margin-left: 430px;
+    margin-right: 0;
 }
 .nav1 {
     position: fixed;
-    float: left;
-    height: 100%;
-    width: 277px;
-    font-size: 24px;
     top: 0;
     left: 0;
+    height: 100%;
+    width: 277px;
     background-color: #FF0000;
+    font-size: 24px;
+    float: left;
     overflow: hidden;
     z-index: 1;
 }
 .nav1 a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 24px;
-    color: white;
     display: block;
+    padding: 6px 8px 6px 16px;
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
 }
 .nav1 a:hover {
     color: black;
@@ -60,14 +95,20 @@ body {
 .nav1 a:first-of-type {
     text-decoration: underline double;
 }
-#img-home {
-    float: left;
-    padding-left: 100px;
+.margin-nav {
+    margin-top: 200px;
+}
+.nav-p {
+    font-size: 16px;
 }
 .paragraph-space {
     margin-top: 30px;
     margin-bottom: 30px;
     text-align: center;
+}
+#img-home {
+    padding-left: 100px;
+    float: left;
 }
 #home-img-paragraph {
     display:inline-block;
@@ -77,18 +118,8 @@ body {
     margin-left: 80px;
     font-style: italic;
 }
-.func-img {
-    width: 98.92px;
-    height: 98.92px;
-}
-.center {
+.center { /*primera aparicion*/
     text-align: center
-}
-.margin-nav {
-    margin-top: 200px;
-}
-.nav-p {
-    font-size: 16px;
 }
 .ul-box1 {
     margin: auto;
@@ -96,16 +127,15 @@ body {
     font-size: 32px;
     font-weight: bold;
 }
-.ul-box1 ul {
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;   
-}
 .ul-box1 li {
-    list-style-type:none;
-    padding: 10px 110px;
     display: inline-block;
     width: 40%;
+    padding: 10px 110px;
+    list-style-type:none;
+}
+.func-img {
+    width: 98.92px;
+    height: 98.92px;
 }
 .ul-box2 { 
     margin: auto;
@@ -113,12 +143,12 @@ body {
     font-size: 24px;
 }
 .ul-box2 li {
-    list-style-type: none;
+    display: inline-block;
+    width: 40%;
     margin: 0;
     padding: 0;
     text-align: center;
-    display: inline-block;
-    width: 40%;
+    list-style-type: none;
 }
 .ul-box2 img {
     width: 70px;
@@ -130,39 +160,23 @@ body {
     font-size: 15px;
 }
 #info-req {
-   /* border: 2px solid #FF0000;
-    background-color: #FF0000;
-    text-align: center;
-    align-self: center;
-    display: inline-block;
-    margin: 40px 250px; */
+    width: 737px;
     margin-left: 130px;
     margin-bottom: 0%;
-    width: 737px;
-
+    margin-right: 0;
 }
-form {
-    width: 737px;
-    height: 439px;
-    align-self: center;
-    background-color: #E5E5E5;
-    border-style: none;
-    margin-left: 130px;
+.name-email input {
+    position: relative;
+    right: 140px;
+    width: 255px;
+    height: 33px;
+    float: right;
 }
-form input {
-   width: 50%;
-}
-form label {
-    font-weight: bold;
-    font-size: 22px;
-}
-#radio-text {
+.radio-text {
     font-size: 14px;
 }
-form textarea {
-    width: 255px;
-    height: 136px;
-    margin-left: 220px;
+#contact-section input{
+    padding-right: 60px;
 }
 #confirm-button {
   margin-left: 315px;
@@ -173,23 +187,25 @@ form textarea {
   border-style: none;
   font-size: 14px;
   color: white;
+  overflow: hidden;
 }
-fieldset {
-    border: none;
-}
-.name-email input {
-    float: right;
-    width: 255px;
-    height: 33px;
+.history-box {
+    width: 100%;
+    margin: 0;
+    padding-left: 60px;
+    background-image: url("../assets/Picture-clock.png");
+    background-color: white;
+    background-position: bottom;
+    background-size: cover;
 }
 .box-year {
     display: inline-block;
     width: 30%;
-    text-align: center;
+    margin: 10px;
     font-size: 20px;
+    text-align: center;
     color: white;
     vertical-align: middle;
-    margin: 10px;
 }
 .year {
     font-family: 'Rokkitt', serif;
@@ -197,40 +213,36 @@ fieldset {
     vertical-align: top;
     color: black;
 }
-.boxxxx {
-    width: 100%;
-    padding-left: 60px;
-}
-.description {
-    border: 1px solid rgb(3, 3, 3);
-    background: rgba(0, 0, 0, 0.900);
-    border-radius: 30px;
+.history-p {
     height: 366px;
+    padding: 10px;
+    border: 1px solid rgb(3, 3, 3);
+    background: rgba(0, 0, 0, 0.678);
+    border-radius: 30px;
     text-align: center;
     vertical-align: middle;
-    padding: 10px;
 }
-table {
-    width: 100%;
-    text-align: center;
-    margin: 200px 0px;
+.ul-box3 { 
+    padding-left: 150px;
+    margin-bottom: 100px;
+    margin-top: 80px;
 }
-table th {
+.ul-box3 ul {
+    display: inline-block;
+    width: 30%;
+    margin-top: 20px;
+}
+.ul-box3 li {
+   width: 40%;
+   padding: 0;
+}
+.ul-box3 h3 {
     font-size: 30px;
     color: #FF0000;
 }
-table td {
-    height: 33px;
-    font-size: 14px;
-}
-footer {
-    background-color: #FF0000;
-    text-align: center;
-    font-family: 'Rokkitt', serif;
-    font-size: 28px;
-    color: white;
-    padding-top: 20px;
-}
+.ul-box3 li:first-child {
+    list-style-type: none;
+ }
 #horizontal-ul ul li {
     display: inline;
     margin: 70px; 

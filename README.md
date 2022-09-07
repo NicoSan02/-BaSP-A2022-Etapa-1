@@ -3,6 +3,7 @@
 
 Trackgenix is a tool designed to improve work management in situations that involve a large number of employees, boosting productivity and improving the decision-making process.
 
+![proceso-trabajo-gestion-tiempo-lugar-trabajo-oficina-isometrica-computadora-computadora-portatil-pc-telefono-movil-cafe-reloj-calendario-documento-banner_284092-386](https://user-images.githubusercontent.com/107139347/188753284-c2b1c893-5d2e-4164-abdf-b49acecc7c02.png)
 
 ## How it works
 

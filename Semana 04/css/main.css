@@ -1,0 +1,416 @@
+h2 {
+    text-align: center;
+    color: white;
+}
+main {
+    /*padding-left: 250px;
+    align-items: center;*/
+    margin: 0 20%;
+}
+form {
+    width: 737px;
+    height: 439px;
+    margin-left: 130px;
+    background-color: #E5E5E5;
+    border-style: none;
+}
+form input {
+    width: 50%;
+    border: none;
+}
+form label {
+    font-weight: bold;
+    font-size: 22px;
+}
+fieldset {
+    border: none;
+}
+form textarea {
+    width: 255px;
+    height: 136px;
+    margin-left: 220px;
+    border: none;
+}
+#first-page {
+    display: block;
+}
+.title-box {
+    display: inline-block;
+    margin: 40px 250px; 
+    /*width: 100%;*/
+    padding: 10px; 
+    border: 2px solid #FF0000;
+    background-color: #FF0000;
+    text-align: center;
+}
+.first-paragraph {
+    display: inline;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    white-space: nowrap;
+}
+#img-home {
+    width: 50%;
+}
+.home-img-paragraph {
+    display:inline-block;
+    width: 342px;
+    height: 124px;
+    margin-top: 100px;
+    margin-left: 80px;
+    font-style: italic;
+}
+.center {
+    text-align: center
+}
+.ul-box1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin: auto;
+    padding-left: 150px;
+    font-size: 32px;
+    font-weight: bold;
+}
+.ul-box1 li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type:none;
+}
+.ul-box1 li p {
+    display: inline;
+}
+
+.func-img {
+    display: inline;
+    width: 98.92px;
+    height: 98.92px;
+}
+.ul-box2 { 
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin: auto;
+   /* padding-left: 150px;
+    font-size: 24px;*/
+}
+.ul-box2 li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type:none;
+    /*width: 40%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style-type: none;*/
+}
+.ul-box2 img {
+    width: 70px;
+    height: 80px;
+}
+.ul-box2 p {
+    width: 350px;
+    text-align: center;
+    font-size: 15px;
+}
+#info-req {
+    width: 737px;
+    margin-left: 130px;
+    margin-bottom: 0%;
+    margin-right: 0;
+}
+#form-position {
+   display: inline-block;
+}
+.name-email input {
+    position: relative;
+    right: 140px;
+    width: 255px;
+    height: 33px;
+    float: right;
+}
+.radio-text {
+    font-size: 14px;
+}
+#contact-section {
+    display: inline-block;
+}
+#contact-section input{ 
+    margin: 0%;
+}
+#confirm-button {
+  margin-left: 315px;
+  width: 255px;
+  height: 40px;
+  background-color: #FF0000;
+  border-color: #FF0000;
+  border-style: none;
+  font-size: 14px;
+  color: white;
+  overflow: hidden;
+}
+.history-box {
+    width: 100%;
+    margin: 0;
+    padding-left: 60px;
+    background-image: url("../assets/Picture-clock.png");
+    background-color: white;
+    background-position: bottom;
+    background-size: cover;
+}
+.box-year {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+}
+.year {
+    font-family: 'Rokkitt', serif;
+    font-size: 36px;
+    vertical-align: top;
+    color: black;
+}
+.history-p {
+    height: 366px;
+    padding: 10px;
+    border: 1px solid rgb(3, 3, 3);
+    background: rgba(0, 0, 0, 0.678);
+    border-radius: 30px;
+    text-align: center;
+    vertical-align: middle;
+}
+.ul-box3 { 
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin: auto;
+    /* padding-left: 150px; */
+    margin-bottom: 100px;
+    margin-top: 80px;
+}
+.ul-box3 ul {
+    display: inline-block;
+    width: 30%;
+    margin-top: 20px;
+}
+.ul-box3 li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type:none;
+    width: 40%;
+    padding: 0; 
+}
+.ul-box3 h3 {
+    font-size: 30px;
+    color: #FF0000;
+}
+.ul-box3 li:first-child {
+    list-style-type: none;
+}
+
+@media screen and (min-width: 1024px) {  /*desktop*/
+h2 {
+    text-align: center;
+    color: white;
+    }
+main {
+    padding-left: 250px;
+    align-items: center;
+    }
+form {
+    width: 737px;
+    height: 439px;
+    margin-left: 130px;
+    background-color: #E5E5E5;
+    border-style: none;
+    }
+form input {
+   width: 50%;
+   border: none;
+    }
+form label {
+    font-weight: bold;
+    font-size: 22px;
+    }
+fieldset {
+    border: none;
+    }
+form textarea {
+    width: 255px;
+    height: 136px;
+    margin-left: 220px;
+    border: none;
+    }
+.title-box {
+    display: inline-block;
+    margin: 40px 250px; 
+    width: 50%;
+    padding: 10px; 
+    border: 2px solid #FF0000;
+    background-color: #FF0000;
+    text-align: center;
+    align-self: center; 
+    }
+.first-paragraph {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    }
+#img-home {
+    padding-left: 100px;
+    float: left;
+    }
+.home-img-paragraph {
+    display:inline-block;
+    width: 342px;
+    height: 124px;
+    margin-top: 100px;
+    margin-left: 80px;
+    font-style: italic;
+    }
+.center {
+    text-align: center
+    }
+.ul-box1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin: auto;
+    padding-left: 150px;
+    font-size: 32px;
+    font-weight: bold;
+    }
+.ul-box1 li {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    padding: 10px 110px;
+    list-style-type:none;
+    }
+.ul-box1 li p {
+    display: inline;
+    }
+
+.func-img {
+    display: inline;
+    width: 98.92px;
+    height: 98.92px;
+    }
+.ul-box2 { 
+   /* display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;*/
+    margin: auto;
+    padding-left: 150px;
+    font-size: 24px;
+    }
+.ul-box2 li {
+    display: inline-block;
+    width: 40%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style-type: none;
+    }
+.ul-box2 img {
+    width: 70px;
+    height: 80px;
+    }
+.ul-box2 p {
+    width: 350px;
+    text-align: center;
+    font-size: 15px;
+    }
+#info-req {
+    width: 737px;
+    margin-left: 130px;
+    margin-bottom: 0%;
+    margin-right: 0;
+    }
+.name-email input {
+    position: relative;
+    right: 140px;
+    width: 255px;
+    height: 33px;
+    float: right;
+    }
+.radio-text {
+    font-size: 14px;
+    }
+
+#contact-section input{
+    padding-right: 60px;
+    }
+#confirm-button {
+  margin-left: 315px;
+  width: 255px;
+  height: 40px;
+  background-color: #FF0000;
+  border-color: #FF0000;
+  border-style: none;
+  font-size: 14px;
+  color: white;
+  overflow: hidden;
+    }
+.history-box {
+    width: 100%;
+    margin: 0;
+    padding-left: 60px;
+    background-image: url("../assets/Picture-clock.png");
+    background-color: white;
+    background-position: bottom;
+    background-size: cover;
+    }
+.box-year {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    }
+.year {
+    font-family: 'Rokkitt', serif;
+    font-size: 36px;
+    vertical-align: top;
+    color: black;
+    }
+.history-p {
+    height: 366px;
+    padding: 10px;
+    border: 1px solid rgb(3, 3, 3);
+    background: rgba(0, 0, 0, 0.678);
+    border-radius: 30px;
+    text-align: center;
+    vertical-align: middle;
+    }
+.ul-box3 { 
+    padding-left: 150px;
+    margin-bottom: 100px;
+    margin-top: 80px;
+    }
+.ul-box3 ul {
+    display: inline-block;
+    width: 30%;
+    margin-top: 20px;
+    }
+.ul-box3 li {
+   width: 40%;
+   padding: 0;
+    }
+.ul-box3 h3 {
+    font-size: 30px;
+    color: #FF0000;
+    }
+.ul-box3 li:first-child {
+    list-style-type: none;
+    }
+}

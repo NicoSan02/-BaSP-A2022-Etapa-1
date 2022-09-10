@@ -13,23 +13,29 @@
         <title>Trackgenix</title>
         <link rel="stylereset" href=".\css\reset.css">
         <link rel="stylesheet" href=".\css\styles.css">
+        <link rel="stylesheet" href=".\css\header.css">
+        <link rel="stylesheet" href=".\css\sidebar.css">
+        <link rel="stylesheet" href=".\css\main.css">
+        <link rel="stylesheet" href=".\css\footer.css">
     </head>
     <body>
         <header>
-            <h1 class="title-box">Trackgenix</h1>
+            <div id="h1-title"><h1 class="first-title-box">Trackgenix</h1></div>
         </header>
+        <aside>
+            <nav class="nav1">
+                <a class="center horizontal-nav" href="#"><img src=".\assets\home-1.svg" alt="Home-icon"><p>Home</p></a>
+                <a class="center margin-nav horizontal-nav" href="#"><img class="img-hide" src=".\assets\user-question.svg" alt="Question-icon">Sign Up</p></a>
+                <a class="center horizontal-nav" href="#"><img class="img-hide" src=".\assets\user-1.svg" alt="User-icon"><p>Log In</p></a>
+                <a class="center margin-nav horizontal-nav" href="#"><img src=".\assets\chevron-circle-right.svg" alt="Contact-icon"><p>Contact</p></a>
+                <div class="contact-hide">
+                    <p class="nav-p hide-p"><img src=".\assets\phone.svg" alt="Phone-icon">(000) 000-0000</p>
+                    <p class="nav-p hide-p"><img src=".\assets\mail.svg" alt="Mail-icon">trackgenixsupp@rr.com</p>
+                </div>
+            </nav>
+        </aside>
         <main>
-            <aside>
-                <nav class="nav1">
-                    <a class="center" href="#"><img src=".\assets\home-1.svg" alt="Home-icon">Home</a>
-                    <a class="center margin-nav" href="#"><img src=".\assets\user-question.svg" alt="Question-icon">Sign Up</a>
-                    <a class="center" href="#"><img src=".\assets\user-1.svg" alt="User-icon">Log In</a>
-                    <a class="center margin-nav" href="#"><img src=".\assets\chevron-circle-right.svg" alt="Contact-icon">Contact</a>
-                    <p class="nav-p"><img src=".\assets\phone.svg" alt="Phone-icon">(000) 000-0000</p>
-                    <p class="nav-p"><img src=".\assets\mail.svg" alt="Mail-icon">trackgenixsupp@rr.com</p>
-                </nav>
-            </aside>
-            <section class="first-page">
+            <section id="first-page">
                 <p class="first-paragraph">
                     A tool designed to improve productivity and work managment
                 </p>
@@ -87,7 +93,7 @@
             </section>
             <section>
                 <h2 class="title-box" id="info-req">Information request</h2>
-                <form>                  
+                <form id="form-position">                  
                     <fieldset class="name-email">
                         <label for="formname">Name:</label>
                         <input type="text" id="formname" name="formname">

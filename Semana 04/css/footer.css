@@ -1,0 +1,33 @@
+footer {
+    width: 100%;
+    margin: 0;
+    padding-top: 20px;
+    background-color: #FF0000;
+    font-family: 'Rokkitt', serif;
+    font-size: 28px;
+    text-align: center;
+    color: white;
+}
+#horizontal-ul ul li {
+    display: inline;
+    margin: 70px; 
+    width: 53px;
+}
+
+@media screen and (min-width: 1024px) {
+    footer {
+        width: 100%;
+        margin: 0;
+        padding-top: 20px;
+        background-color: #FF0000;
+        font-family: 'Rokkitt', serif;
+        font-size: 28px;
+        text-align: center;
+        color: white;
+    }
+    #horizontal-ul ul li {
+        display: inline;
+        margin: 70px; 
+        width: 53px;
+    }
+}

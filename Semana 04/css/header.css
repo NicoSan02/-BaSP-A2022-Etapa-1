@@ -1,0 +1,35 @@
+
+h1 {
+    /*margin-left: 35px;*/
+    color: white;
+    text-align: center;
+}
+/*header {
+    width: 100%;
+}*/
+#h1-title {
+    display: flex;
+    justify-content: space-around;
+}
+.first-title-box {
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    border: 2px solid #FF0000;
+    background-color: #FF0000;
+    text-align: center;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+h1 {
+    margin-left: 35px;
+    color: white;
+    text-align: center;
+    }
+.first-title-box { /*add title-box props*/
+    margin-left: 430px;
+    margin-right: 0;
+    border-radius: 10px;
+    }
+}

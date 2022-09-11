@@ -5,12 +5,12 @@ h2 {
 main {
     /*padding-left: 250px;
     align-items: center;*/
-    margin: 0 20%;
+    /* margin: 0 20%; */
 }
 form {
     width: 737px;
     height: 439px;
-    margin-left: 130px;
+    margin-left: 8%;
     background-color: #E5E5E5;
     border-style: none;
 }
@@ -32,10 +32,14 @@ form textarea {
     border: none;
 }
 #first-page {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 .title-box {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     margin: 40px 250px; 
     /*width: 100%;*/
     padding: 10px; 
@@ -44,21 +48,23 @@ form textarea {
     text-align: center;
 }
 .first-paragraph {
-    display: inline;
+    display: inline-flex;
+    justify-content: center;
     width: 100%;
     margin-top: 30px;
     margin-bottom: 30px;
     white-space: nowrap;
 }
 #img-home {
+    display: flex;
     width: 50%;
 }
 .home-img-paragraph {
-    display:inline-block;
+    display:block;
     width: 342px;
     height: 124px;
     margin-top: 100px;
-    margin-left: 80px;
+    margin-left: 30%;
     font-style: italic;
 }
 .center {
@@ -66,12 +72,12 @@ form textarea {
 }
 .ul-box1 {
     display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
+    flex-direction: column;
     margin: auto;
     padding-left: 150px;
     font-size: 32px;
     font-weight: bold;
+    align-items: flex-start;
 }
 .ul-box1 li {
     display: flex;
@@ -90,11 +96,9 @@ form textarea {
 }
 .ul-box2 { 
     display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
     margin: auto;
-   /* padding-left: 150px;
-    font-size: 24px;*/
+    flex-direction: column;
+    align-items: flex-start;
 }
 .ul-box2 li {
     display: flex;
@@ -118,7 +122,7 @@ form textarea {
 }
 #info-req {
     width: 737px;
-    margin-left: 130px;
+    /*margin-left: 8%;*/
     margin-bottom: 0%;
     margin-right: 0;
 }
@@ -187,8 +191,11 @@ form textarea {
 }
 .ul-box3 { 
     display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
+    margin: auto;
+    flex-direction: column;
+    /*display: flex;
+    flex-wrap: wrap;*/
+    align-items: center;
     margin: auto;
     /* padding-left: 150px; */
     margin-bottom: 100px;
@@ -201,11 +208,13 @@ form textarea {
 }
 .ul-box3 li {
     display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
     flex-direction: row;
     justify-content: center;
     list-style-type:none;
     width: 40%;
-    padding: 0; 
+    padding: 0;
 }
 .ul-box3 h3 {
     font-size: 30px;

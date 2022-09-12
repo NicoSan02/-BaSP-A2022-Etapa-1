@@ -4,13 +4,13 @@ footer {
     padding-top: 20px;
     background-color: #FF0000;
     font-family: 'Rokkitt', serif;
-    font-size: 28px;
+    font-size: 15px;
     text-align: center;
     color: white;
 }
 #horizontal-ul ul li {
     display: inline;
-    margin: 70px; 
+    margin: 5%; 
     width: 53px;
 }
 

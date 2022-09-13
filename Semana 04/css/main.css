@@ -138,6 +138,7 @@ form textarea {
     display: inline;
     width: 255px;
     height: 33px;
+    margin-left: 22%;
 }
 .radio-text {
     font-size: 14px;
@@ -154,7 +155,7 @@ form textarea {
     align-items: center;
 }
 #confirm-button {
-  margin-left: 14%;
+  margin-left: 18.5%;
   width: 255px;
   height: 40px;
   background-color: #FF0000;
@@ -310,10 +311,10 @@ form textarea {
     }
 }
 @media screen and (min-width: 1024px) {  /*desktop*/
-h2 {
+/* h2 {
     text-align: center;
     color: white;
-    }
+    } */
 main {
     padding-left: 250px;
     align-items: center;
@@ -325,10 +326,10 @@ form {
     background-color: #E5E5E5;
     border-style: none;
     }
-form input {
+/* form input {
    width: 50%;
    border: none;
-    }
+    } */
 form label {
     font-weight: bold;
     font-size: 22px;
@@ -343,14 +344,14 @@ form textarea {
     border: none;
     }
 .title-box {
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     margin: 40px 250px; 
     width: 50%;
    /* height: 40px;*/
     padding: 30px 10px; 
-    border: 2px solid #FF0000;
-    background-color: #FF0000;
+    /* border: 2px solid #FF0000;
+    background-color: #FF0000; */
     }
 .first-paragraph {
     margin-top: 30px;
@@ -436,16 +437,19 @@ form textarea {
     }
 #info-req {
     width: 737px;
-    margin-left: 130px;
+    margin-left: 20%;
     margin-bottom: 0%;
     margin-right: 0;
     }
+#form-position {
+    margin-left: 20%;
+}
 .name-email input {
     position: relative;
     right: 140px;
     width: 255px;
     height: 33px;
-    float: right;
+    margin-left: 67%;
     }
 .radio-text {
     font-size: 14px;

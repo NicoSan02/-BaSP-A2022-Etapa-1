@@ -16,12 +16,9 @@ h1 {
     width: 100%;
     margin-top: 70px;
     margin-bottom: 50px;
-    /*margin-left: 20%;
-    margin-right: 20%;*/
     border: 2px solid #FF0000;
     background-color: #FF0000;
     text-align: center;
-    /*border-radius: 10px;*/
 }
 @media screen and (min-width: 480px) {
 
@@ -33,6 +30,11 @@ h1 {
     text-align: center;
     }
 .first-title-box { /*add title-box props*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 685px;
+    height: 110px;
     margin-left: 430px;
     margin-right: 0;
     border-radius: 10px;

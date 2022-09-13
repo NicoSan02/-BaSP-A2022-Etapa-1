@@ -36,6 +36,7 @@ form textarea {
 .title-box {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 40px 0px; 
     width: 100%;
     height: 40px;
@@ -62,7 +63,7 @@ form textarea {
     width: 342px;
     height: 124px;
     margin-top: 100px;
-    margin-left: 20%;
+    margin-left: 10%;
     font-style: italic;
 }
 .center {
@@ -76,7 +77,7 @@ form textarea {
     font-size: 32px;
     font-weight: bold;
     align-items: flex-start;
-    margin-left: 25%;
+    margin-left: 20px;
 }
 .ul-box1 li {
     display: flex;
@@ -98,7 +99,7 @@ form textarea {
     flex-direction: column;
     align-items: flex-start;
     flex-wrap: wrap;
-    margin-left: 25%;
+    margin-left: 20px;
 }
 .ul-box2 li {
     display: block;
@@ -135,10 +136,8 @@ form textarea {
 }
 .name-email input {
     display: inline;
-   /* right: 140px;*/
     width: 255px;
     height: 33px;
-    /*float: right;*/
 }
 .radio-text {
     font-size: 14px;
@@ -155,7 +154,6 @@ form textarea {
     align-items: center;
 }
 #confirm-button {
- /* margin-left: 315px; /*afecta todo*/
   margin-left: 14%;
   width: 255px;
   height: 40px;
@@ -167,19 +165,21 @@ form textarea {
   /*overflow: hidden;*/
 }
 .history-box {
+    /*display: flex;*/
     width: 100%;
     margin: 0;
-    /*padding-left: 60px;*/
     background-image: url("../assets/Picture-clock.png");
     background-color: white;
     background-position: bottom;
     background-size: cover;
 }
 .box-year {
+    /*flex: 1;
+    flex-wrap: wrap;*/
     display: inline-block;
     width: 30%;
     margin: 5px;
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
     color: white;
     vertical-align: middle;
@@ -199,17 +199,32 @@ form textarea {
     text-align: center;
     vertical-align: middle;
 }
+.contact-container {
+    display: flex;
+    justify-content: center;
+    /* width: 50%; */
+    margin: 100px 0 15px 0;
+}
+.contact-title {
+    font-size: 20px;
+}
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 45px;
+    background-color: #FF0000;
+}
 .ul-box3 { 
     display: flex;
     margin: auto;
-    flex-direction: column;
-    /*display: flex;
-    flex-wrap: wrap;*/
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
     margin: auto;
-    /* padding-left: 150px; */
+    /* padding-left: 51px; */
     margin-bottom: 100px;
     margin-top: 80px;
+    justify-content: flex-end;
 }
 .ul-box3 ul {
     display: inline-block;
@@ -328,14 +343,14 @@ form textarea {
     border: none;
     }
 .title-box {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     margin: 40px 250px; 
     width: 50%;
-    padding: 10px; 
+   /* height: 40px;*/
+    padding: 30px 10px; 
     border: 2px solid #FF0000;
     background-color: #FF0000;
-    text-align: center;
-    align-self: center; 
     }
 .first-paragraph {
     margin-top: 30px;
@@ -343,32 +358,36 @@ form textarea {
     text-align: center;
     }
 #img-home {
-    padding-left: 100px;
-    float: left;
+    display: block;
+    width: 40%;
     }
 .home-img-paragraph {
-    display:inline-block;
+   /* display:block;
     width: 342px;
     height: 124px;
-    margin-top: 100px;
-    margin-left: 80px;
-    font-style: italic;
+    margin-top: 100px;*/
+    margin-left: 35%;
+    /*font-style: italic;*/
     }
-.center {
+/*.center {
     text-align: center
-    }
+    }*/
 .ul-box1 {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: flex-end;
     flex-wrap: wrap;
-    align-content: flex-start;
     margin: auto;
-    padding-left: 150px;
+    /* padding-left: 150px; */
     font-size: 32px;
     font-weight: bold;
     }
 .ul-box1 li {
     display: flex;
     flex-direction: row;
+    flex: 1;
+    justify-content: flex-start;
     width: 40%;
     padding: 10px 110px;
     list-style-type:none;
@@ -376,27 +395,35 @@ form textarea {
 .ul-box1 li p {
     display: inline;
     }
-
 .func-img {
     display: inline;
     width: 98.92px;
     height: 98.92px;
     }
 .ul-box2 { 
-   /* display: flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    /*margin: auto;*/
+    /* display: flex;
     flex-wrap: wrap;
     align-content: flex-start;*/
-    margin: auto;
     padding-left: 150px;
     font-size: 24px;
     }
 .ul-box2 li {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 40%;
-    margin: 0;
+    /*padding: 10px 110px;*/
+    list-style-type:none;
+    /* margin: 0;
     padding: 0;
-    text-align: center;
-    list-style-type: none;
+    text-align: center; */
     }
 .ul-box2 img {
     width: 70px;
@@ -423,12 +450,11 @@ form textarea {
 .radio-text {
     font-size: 14px;
     }
-
 #contact-section input{
     padding-right: 60px;
     }
 #confirm-button {
-  margin-left: 315px;
+  margin-left: 220px;
   width: 255px;
   height: 40px;
   background-color: #FF0000;
@@ -471,6 +497,9 @@ form textarea {
     text-align: center;
     vertical-align: middle;
     }
+.contact-container {
+    display: none;
+}
 .ul-box3 { 
     padding-left: 150px;
     margin-bottom: 100px;

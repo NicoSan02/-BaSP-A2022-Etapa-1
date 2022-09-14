@@ -54,7 +54,7 @@ form textarea {
 }
 #img-home {
     display: inline;
-    width: 60%;
+    width: 50%;
     margin: 0 25%;
 }
 .home-img-paragraph {
@@ -115,7 +115,7 @@ form textarea {
     font-weight: bold;
 }
 #form-position {
-   display: inline-block;
+    display: inline-block;
 }
 .name-email input {
     display: inline;
@@ -138,14 +138,14 @@ form textarea {
     align-items: center;
 }
 #confirm-button {
-  margin-left: 18.5%;
-  width: 255px;
-  height: 40px;
-  background-color: #FF0000;
-  border-color: #FF0000;
-  border-style: none;
-  font-size: 14px;
-  color: white;
+    margin-left: 18.5%;
+    width: 255px;
+    height: 40px;
+    background-color: #FF0000;
+    border-color: #FF0000;
+    border-style: none;
+    font-size: 14px;
+    color: white;
 }
 .history-box {
     width: 100%;
@@ -244,14 +244,14 @@ form textarea {
         align-items: center;
     }
     #confirm-button {
-      margin-left: 28%;
-      width: 255px;
-      height: 40px;
-      background-color: #FF0000;
-      border-color: #FF0000;
-      border-style: none;
-      font-size: 14px;
-      color: white;
+        margin-left: 28%;
+        width: 255px;
+        height: 40px;
+        background-color: #FF0000;
+        border-color: #FF0000;
+        border-style: none;
+        font-size: 14px;
+        color: white;
     }
 }
 @media screen and (min-width: 1024px) {
@@ -286,9 +286,14 @@ form textarea {
     #img-home {
         display: block;
         width: 40%;
+        margin: 0 70px 0 0;
     }
     .home-img-paragraph {
-        margin-left: 35%;
+        margin: 60px 0 0 0;
+    }
+    #page1-desktop-wrap {
+        display: flex;
+        justify-content: center;
     }
     .ul-box1 {
         display: flex;
@@ -346,13 +351,13 @@ form textarea {
         padding-right: 60px;
     }
     #confirm-button {
-    margin-left: 220px;
-    width: 255px;
-    height: 40px;
-    border-style: none;
-    font-size: 14px;
-    color: white;
-    overflow: hidden;
+        margin-left: 220px;
+        width: 255px;
+        height: 40px;
+        border-style: none;
+        font-size: 14px;
+        color: white;
+        overflow: hidden;
     }
     .history-box {
         padding-left: 60px;

@@ -3,12 +3,7 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-
-/* html {
-    width: 100vw;
-}  */
 body {
-    /* max-width: 100vh;  */
     display: inline-block;
     width: fit-content;
     height: 100vh;

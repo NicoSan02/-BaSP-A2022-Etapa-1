@@ -21,6 +21,12 @@ This system also records hours of work, making it easier to generate reports.
 We presented the HTML structure of the app, based on the design made in the first week.
 ## Week 03: CSS styling
 Approached the styling of the HTML landing page made the previous week.
+## Week 04: Responsive layout
+Applied flexbox to make the layout responsive
+
+## Host link
+https://nicosan02.github.io/-BaSP-A2022-Etapa-1/Semana%2004/
+
 ## Tech
 ```
 This project uses HTML to run on the browser and CSS for styling.

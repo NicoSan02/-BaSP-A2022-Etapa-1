@@ -24,16 +24,33 @@
         </header>
         <aside id="aside-box">
             <nav class="nav1">
-                <a class="center horizontal-nav" href="#"><img src=".\assets\home-1.svg" alt="Home-icon"><p>Home</p></a>
-                <a class="center margin-nav horizontal-nav" href="#"><img class="img-hide" src=".\assets\user-question.svg" alt="Question-icon">Sign Up</p></a>
-                <a class="center horizontal-nav" href="#"><img class="img-hide" src=".\assets\user-1.svg" alt="User-icon"><p>Log In</p></a>
-                <a class="center margin-nav horizontal-nav" href="#"><img src=".\assets\chevron-circle-right.svg" alt="Contact-icon"><p>Contact</p></a>
+                <a class="center horizontal-nav" href="#">
+                    <img src=".\assets\home-1.svg" alt="Home-icon">
+                    <p>Home</p>
+                </a>
+                <a class="center margin-nav horizontal-nav" href="#">
+                    <img class="img-hide" src=".\assets\user-question.svg" alt="Question-icon">
+                    <p>Sign Up</p>
+                </a>
+                <a class="center horizontal-nav" href="#">
+                    <img class="img-hide" src=".\assets\user-1.svg" alt="User-icon">
+                    <p>Log In</p>
+                </a>
+                <a class="center margin-nav horizontal-nav" href="#">
+                    <img src=".\assets\chevron-circle-right.svg" alt="Contact-icon">
+                    <p>Contact</p>
+                </a>
                 <div class="contact-hide">
                     <p class="nav-p hide-p"><img src=".\assets\phone.svg" alt="Phone-icon">(000) 000-0000</p>
                     <p class="nav-p hide-p"><img src=".\assets\mail.svg" alt="Mail-icon">trackgenixsupp@rr.com</p>
                 </div>
             </nav>
             <nav class="nav2">
+                <div class="nav-left" id="menu-icon"></div>
+                <div class="nav-left" id="menu-icon"></div>
+                <div class="nav-left" id="menu-icon"></div>
+            </nav>
+            <!-- <nav class="nav2">
                 <div>
                     <a class="center horizontal-nav nav-left" href="#"><img src=".\assets\home-1.svg" alt="Home-icon"><p>Home</p></a>
                     <a class="center margin-nav horizontal-nav nav-right" href="#"><img src=".\assets\chevron-circle-right.svg" alt="Contact-icon"><p>Contact</p></a>
@@ -42,7 +59,7 @@
                     <a class="center margin-nav horizontal-nav nav-left" href="#"><img class="img-hide" src=".\assets\user-question.svg" alt="Question-icon">Sign Up</p></a>
                     <a class="center horizontal-nav nav-right" href="#"><img class="img-hide" src=".\assets\user-1.svg" alt="User-icon"><p>Log In</p></a>
                 </div>
-            </nav>
+            </nav> -->
         </aside>
         <main>
             <section id="first-page">
@@ -56,7 +73,8 @@
                             Sometimes working with large groups of people can be difficult.
                         </p>
                         <p>
-                            Trackgenix is a system created to make things easier in cases like that and accomplish your goals in the easiest and fastest way.
+                            Trackgenix is a system created to make things easier <!--ESTO ESTÁ BIEN?> -->
+                            in cases like that and accomplish your goals in the easiest and fastest way.
                         </p>
                     </div>
                 </div>
@@ -105,7 +123,7 @@
             </section>
             <section>
                 <h2 class="title-box" id="info-req">Information request</h2>
-                <form id="form-position">                  
+                <form id="form-position">
                     <fieldset class="name-email">
                         <label for="formname">Name:</label>
                         <input type="text" id="formname" name="formname">
@@ -114,10 +132,10 @@
                         <label for="formemail">Email:</label>
                         <input type="email" id="formemail" name="formemail">
                     </fieldset>
-                    <fieldset>   
+                    <fieldset>
                         <label for="formcontactarea">Contact area:</label>
                         <div id="contact-section">
-                            <input type="radio" id="hr-dpt" name="formcontactarea">                           
+                            <input type="radio" id="hr-dpt" name="formcontactarea">
                             <label for="contactarea" class="radio-text">HR department</label>
                             <input type="radio" id="systems" name="formcontactarea">
                             <label for="contactarea" class="radio-text">Systems</label>
@@ -125,7 +143,7 @@
                             <label for="contactarea" class="radio-text">Commercialization</label>
                         </div>
                     </fieldset>
-                    <fieldset>    
+                    <fieldset>
                         <label for="formmessage">Message</label>
                         <div class="form-text-button">
                             <textarea rows="6" cols="18"></textarea>
@@ -133,7 +151,7 @@
                                 <input type="submit" id="confirm-button" value="Confirm">
                             </span>
                         </div>
-                    </fieldset>   
+                    </fieldset>
                 </form>
             </section>
             <section>
@@ -202,21 +220,23 @@
             </section>
             <section class="ul-box3">
                 <ul>
-                    <li><h3><img src=".\assets\cart-4.svg" alt="Cart-icon">Products</h3></li>
+                    <li>
+                        <h3><img src=".\assets\cart-4.svg" alt="Cart-icon">Products</h3>
+                    </li>
                     <li>Funcionalities</li>
                     <li>Downloads</li>
                     <li>Integration</li>
                     <li>Extra</li>
                 </ul>
                 <ul>
-                    <li><h3><img src=".\assets\chart-vertical.svg" alt="Chart-icon">Business</h3></li>                  
+                    <li><h3><img src=".\assets\chart-vertical.svg" alt="Chart-icon">Business</h3></li>
                     <li>About us</li>
                     <li>Clients</li>
                     <li>Resource</li>
                     <li>Blog</li>
                 </ul>
                 <ul>
-                    <li><h3><img src=".\assets\flag-2.svg" alt="Flag-icon">Support</h3></li>        
+                    <li><h3><img src=".\assets\flag-2.svg" alt="Flag-icon">Support</h3></li>
                     <li>Help</li>
                     <li>Tutorials</li>
                     <li>API</li>

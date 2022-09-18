@@ -37,7 +37,7 @@ form textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 40px 0px; 
+    margin: 10% 0; 
     width: 100%;
     height: 40px;
     border: 2px solid #FF0000;
@@ -48,8 +48,7 @@ form textarea {
     display: inline-flex;
     justify-content: center;
     width: 100%;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 7% 0;
     white-space: nowrap;
 }
 #img-home {
@@ -61,8 +60,8 @@ form textarea {
     display:block;
     width: 342px;
     height: 124px;
-    margin-top: 100px;
-    margin-left: 10%;
+    margin-top: 17%;
+    margin-left: 20%;
     font-style: italic;
 }
 .center {
@@ -74,11 +73,11 @@ form textarea {
     font-size: 32px;
     font-weight: bold;
     align-items: flex-start;
-    margin-left: 20px;
+    margin-left: 5%;
 }
 .ul-box1 li {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: center;
     list-style-type:none;
 }
@@ -96,7 +95,7 @@ form textarea {
     flex-direction: column;
     align-items: flex-start;
     flex-wrap: wrap;
-    margin-left: 20px;
+    margin-left: 5%;
 }
 .ul-box2 li {
     display: block;
@@ -158,7 +157,7 @@ form textarea {
 .box-year {
     display: inline-block;
     width: 30%;
-    margin: 5px;
+    margin: 1%;
     font-size: 10px;
     text-align: center;
     color: white;
@@ -182,7 +181,7 @@ form textarea {
 .contact-container {
     display: flex;
     justify-content: center;
-    margin: 100px 0 15px 0;
+    margin: 20% 0 6% 0;
 }
 .contact-title {
     font-size: 20px;
@@ -196,18 +195,17 @@ form textarea {
 }
 .ul-box3 { 
     display: flex;
-    margin: auto;
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-start;
-    margin: auto;
-    margin-bottom: 100px;
-    margin-top: 80px;
+    /* margin: auto; */
+    margin-bottom: 20%;
+    margin-top: 18%;
 }
 .ul-box3 ul {
     display: inline-block;
     width: 30%;
-    margin-top: 20px;
+    margin-top: 5%;
 }
 .ul-box3 li {
     display: flex;
@@ -262,7 +260,7 @@ form textarea {
     form {
         width: 737px;
         height: 439px;
-        margin-left: 130px;
+        /* margin-left: 130px; */
     }
     form label {
         font-size: 22px;
@@ -270,17 +268,16 @@ form textarea {
     form textarea {
         width: 255px;
         height: 136px;
-        margin-left: 220px;
+        margin-left: 30%;
         border: none;
     }
     .title-box {
-        margin: 40px 250px; 
+        margin: 10% 30%; 
         width: 50%;
         padding: 30px 10px; 
     }
     .first-paragraph {
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin: 6% 0;
         text-align: center;
     }
     #img-home {
@@ -289,7 +286,7 @@ form textarea {
         margin: 0 70px 0 0;
     }
     .home-img-paragraph {
-        margin: 60px 0 0 0;
+        margin: 10% 0 0 0;
     }
     #page1-desktop-wrap {
         display: flex;
@@ -345,13 +342,13 @@ form textarea {
         font-size: 14px;
     }
     #contact-section {
-            margin-left: 18%;
+        margin-left: 18%;
     }
     #contact-section input{
         padding-right: 60px;
     }
     #confirm-button {
-        margin-left: 220px;
+        margin-left: 42%;
         width: 255px;
         height: 40px;
         border-style: none;
@@ -363,7 +360,6 @@ form textarea {
         padding-left: 60px;
     }
     .box-year {
-        margin: 10px;
         font-size: 20px;
     }
     .year {

@@ -25,7 +25,6 @@ form textarea {
     height: 136px;
     margin-left: 20%;
     border: none;
-   
 }
 #first-page {
     display: flex;
@@ -70,25 +69,34 @@ form textarea {
 .ul-box1 {
     display: flex;
     flex-direction: column;
-    font-size: 32px;
+    margin-left: 5%;
     font-weight: bold;
     align-items: flex-start;
-    margin-left: 5%;
 }
 .ul-box1 li {
     display: flex;
-    /* flex-direction: row; */
     justify-content: center;
+    margin-bottom: 3%;
     list-style-type:none;
 }
 .ul-box1 li p {
     display: inline;
+    margin-left: 15px;
+    font-size: 32px;
 }
-
+.rhombus {
+    background: #FF0000;
+    width: 15vw;
+    height: 15vw;
+    margin-bottom: 10%;
+    transform: rotate(45deg);
+    border-radius: 10px;
+}
 .func-img {
     display: inline;
-    width: 98.92px;
-    height: 98.92px;
+    width: 12vw;
+    height: 12vw;
+    transform: rotate(-45deg);
 }
 .ul-box2 { 
     display: flex;
@@ -106,15 +114,23 @@ form textarea {
 }
 .ul-box2 p {
     width: 350px;
-    text-align: center;
+    text-align: initial;
+    margin-left: 25%;
     font-size: 15px;
 }
+.ul-box2 li:nth-child(3) p {
+    margin-left: 18%;
+}
 .box2-subtitle {
+    margin-left: 4%;
     font-size: 30px;
     font-weight: bold;
 }
-#form-position {
-    display: inline-block;
+#info-req {
+    width: 90%;
+    margin-left: 6%;
+    margin-bottom: 0%;
+    margin-right: 0;
 }
 .name-email input {
     display: inline;
@@ -158,7 +174,7 @@ form textarea {
     display: inline-block;
     width: 30%;
     margin: 1%;
-    font-size: 10px;
+    font-size: 14px;
     text-align: center;
     color: white;
     vertical-align: middle;
@@ -198,7 +214,6 @@ form textarea {
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-start;
-    /* margin: auto; */
     margin-bottom: 20%;
     margin-top: 18%;
 }
@@ -219,9 +234,30 @@ form textarea {
     color: #FF0000;
 }
 
-
 @media screen and (min-width: 480px) {
-    
+    .ul-box1 {
+        margin-left: 8%;
+    }
+    .func-img {
+        display: inline;
+        width: 12vw;
+        height: 12vw;
+    }
+    .rhombus {
+        width: 13vw;
+        height: 13vw;
+    }
+    .ul-box2 {
+        margin-left: 8%;
+    }
+    .box2-subtitle {
+        margin-left: 4%;
+        font-size: 32px;
+        font-weight: bold;
+    }
+    .ul-box2 p {
+        font-size: 18px;
+    }
     form input {
         margin-left: 35%;
     }
@@ -232,9 +268,7 @@ form textarea {
         border: none;
     }
     .name-email input {
-        display: inline;
-        width: 255px;
-        height: 33px;
+        margin-left: 34%;
     }
     .form-text-button {
         display: flex;
@@ -251,6 +285,9 @@ form textarea {
         font-size: 14px;
         color: white;
     }
+    .box-year {
+        font-size: 16px;
+    }
 }
 @media screen and (min-width: 1024px) {
     main {
@@ -260,7 +297,6 @@ form textarea {
     form {
         width: 737px;
         height: 439px;
-        /* margin-left: 130px; */
     }
     form label {
         font-size: 22px;
@@ -307,6 +343,22 @@ form textarea {
         width: 40%;
         padding: 10px 110px;
     }
+    .ul-box1 li p {
+        padding-left: 5%;
+    }
+    .rhombus {
+        background: #FF0000;
+        width: 5.5vw;
+        height: 5.5vw;
+        transform: rotate(45deg);
+        border-radius: 10px;
+    }
+    .func-img {
+        display: inline;
+        width: 5vw;
+        height: 5vw;
+        transform: rotate(-45deg);
+    }
     .ul-box2 { 
         flex-direction: row;
         justify-content: center;
@@ -322,11 +374,18 @@ form textarea {
         width: 40%;
         list-style-type:none;
     }
+    .ul-box2 p {
+        width: 350px;
+        text-align: initial;
+        font-size: 15px;
+        margin: 0;
+    }
+    .ul-box2 li:nth-child(3) p {
+        margin-left: 0
+    }
     #info-req {
-        width: 737px;
+        width: 59%;
         margin-left: 20%;
-        margin-bottom: 0%;
-        margin-right: 0;
     }
     #form-position {
         margin-left: 20%;
@@ -371,7 +430,4 @@ form textarea {
     .ul-box3 { 
         padding-left: 150px;
     }
-    .ul-box3 li:first-child {
-        list-style-type: none;
-        }
-}
+    }

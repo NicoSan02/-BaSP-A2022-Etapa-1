@@ -10,6 +10,7 @@ if (randomNum >= 0.5) {
 } else {
     alert("Lower than 0,5")    
 };
+console.log(randomNum);
 
 // b) Crear una variable “Age” que contenga un número entero entre 0 y 100 
 // y muestre los siguientes mensajes de alerta:
@@ -38,5 +39,5 @@ if (age < 2) {
 } else {
     alert("Anciano");    
 };
-// console.log(age);
+console.log(age);
     

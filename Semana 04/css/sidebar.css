@@ -12,18 +12,11 @@
     background-color: #FF0000;
     overflow: hidden;
 }
-/* .nav2 a {
-    margin-left: 30px;
-    padding: 8px 8px 15px 16px;
-    font-size: 18px;
-    text-decoration: none;
-    color: white;
-}  */
 #menu-icon{ 
     width: 35px;
     height: 3px;
-    background-color: black;
     margin: 1% 0 1% 5%;
+    background-color: black;
 }
 .nav2 p {
     text-decoration: double;

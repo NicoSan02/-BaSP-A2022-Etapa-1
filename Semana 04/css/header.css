@@ -5,20 +5,16 @@ h1 {
 #h1-title {
     display: flex;
     justify-content: space-around;
-    /* padding-top: 10px; */
 }
 .first-title-box {
     width: 100%;
     margin-top: 2%;
     margin-bottom: 10%;
+    text-align: center;
     border: 2px solid #FF0000;
     background-color: #FF0000;
-    text-align: center;
 }
 @media screen and (min-width: 1024px) {
-/* h1 {
-    margin-left: 35px;
-    } */
 .first-title-box { 
     display: flex;
     align-items: center;

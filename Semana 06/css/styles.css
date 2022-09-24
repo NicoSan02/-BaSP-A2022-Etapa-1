@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    display: inline-block;
+    width: fit-content;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+    color: black;
+}

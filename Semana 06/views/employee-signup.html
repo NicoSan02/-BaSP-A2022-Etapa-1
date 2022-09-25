@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@500&display=swap');
+    </style>
+    <title>Signup</title>
+    <link rel="stylereset" href="..\css\reset.css">
+    <link rel="stylesheet" href="..\css\styles.css">
+    <link rel="stylesheet" href="..\css\header.css">
+    <link rel="stylesheet" href="..\css\main.css">
+    <link rel="stylesheet" href="..\css\employee-signup.css">
+    <script defer src="..\javascript\employee-signup.js"></script>
+</head>
+<body>
+    <header>
+        <div id="signup-header">
+            <h1><a href=".\index.html">Trackgenix</a></h1>
+            <p><a href=".\login.html">Log in</a></p>
+        </div>
+    </header>
+    <main>
+        <form id="signup-form">
+            <p id="signup-title">Register</p>
+            <div class="signup-form-fields">
+                <div class="field-div">
+                    <fieldset class="name">
+                        <label for="formname">First Name</label>
+                        <input type="text" id="formname" name="formname">
+                    </fieldset>
+                    <fieldset class="last-name">
+                        <label for="formlastname">Last Name</label>
+                        <input type="text" id="formlastname" name="formlastname">
+                    </fieldset>
+                </div>
+                <div class="field-div">
+                    <fieldset class="id-document">
+                        <label for="formiddocument">ID</label>
+                        <input type="number" id="formiddocument" name="formiddocument">
+                    </fieldset>
+                    <fieldset class="birthdate">
+                        <label for="formbirthdate">Birth Date</label>
+                        <input type="number" id="formbirthdate" name="formbirthdate">
+                    </fieldset>
+                </div>
+                <div class="field-div">
+                    <fieldset class="phone">
+                        <label for="formphone">Phone Number</label>
+                        <input type="number" id="formphone" name="formphone">
+                    </fieldset>
+                    <fieldset class="address">
+                        <label for="formemail">Address</label>
+                        <input type="text" id="formaddress" name="formaddress">
+                    </fieldset>
+                </div>
+                <div class="field-div">
+                    <fieldset class="city">
+                        <label for="formcity">City</label>
+                        <input type="text" id="formcity" name="formcity">
+                    </fieldset>
+                    <fieldset class="postal-code">
+                        <label for="formpostal-code">Postal Code</label>
+                        <input type="text" id="formpostal-code" name="formpostal-code">
+                    </fieldset>
+                </div>
+                <div class="field-div">
+                    <fieldset class="email">
+                        <label for="formemail">Email</label>
+                        <input type="text" id="formemail" name="formemail">
+                    </fieldset>
+                    <fieldset class="password">
+                        <label for="formpassword">Password</label> 
+                        <input type="password" id="formpassword" name="formpassword">
+                    </fieldset>
+                    <fieldset class="repeat-password">
+                        <label for="formrepeatpassword">Repeat Password</label> 
+                        <input type="password" id="formrepeatpassword" name="formrepeatpassword">
+                    </fieldset>
+                </div>
+                <fieldset>
+                    <input type="submit" id="create-button" value="Create">
+                </fieldset>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

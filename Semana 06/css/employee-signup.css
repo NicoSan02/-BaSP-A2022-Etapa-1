@@ -1,0 +1,64 @@
+main {
+    padding: 0;
+}
+form a {
+    text-decoration: none;
+    color: black;
+}
+#signup-form {
+    margin: 20%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: auto;
+}
+#signup-title {
+    text-align: center;
+    margin-bottom: 5%;
+    padding-top: 5%;
+    font-size: 36px;
+}
+.signup-form-fields {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.signup-form-fields input {
+    border-bottom: 2px solid red;
+}
+.signup-p {
+    font-size: 12px;
+}
+#form-check {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-left: 32%;
+    margin-top: 5%;
+}
+/* #register-passforgoten {
+    display: flex;
+    margin:10%;
+    justify-content: space-around;
+} */
+#create-button {
+    margin-left: 5%;
+    width: 255px;
+    height: 40px;
+    background-color: #FF0000;
+    border-color: #FF0000;
+    border-style: none;
+    font-size: 14px;
+    color: white;
+}
+/* form input {
+    margin-left: 0%;
+    width: auto;
+} */
+.green-border {
+    border: 3px solid green;
+}
+.red-border {
+    border: 3px solid red;
+}

@@ -16,15 +16,11 @@ function validateEmail (){
 
 email.onblur = function() {
     email.classList.add("green-border");
-}
-submitButton.onclick = function(e) {
-    e.preventDefault();
-    console.log(email.value);
 
     if (email.value == ''){
     email.classList.add("red-border");
     alert('Email field is required');
-} else if (validateEmail = false){
+} else if (!validateEmail()){
     alert('Invalid Email format');
 } else {
     alert('Valid Email');
@@ -32,14 +28,7 @@ submitButton.onclick = function(e) {
     email.classList.add("green-border");
 }
 }
-
-// if (email.value.match(emailPattern)) {
-// alert("Valid email address!");
-// email.classList.add("green-border");
-// }
-// else
-// {
-// alert("You have entered an invalid email address!");
-// email.classList.add("red-border");
-// }
-// }
+submitButton.onclick = function(e) {
+    e.preventDefault();
+    console.log(email.value);
+}

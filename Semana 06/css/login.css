@@ -61,3 +61,13 @@ form input {
 .red-border {
     border: 3px solid red;
 }
+#email-error {
+    display: none;
+    font-size: 10px;
+    color: red;
+}
+#password-error {
+    display: none;
+    font-size: 10px;
+    color: red;
+}

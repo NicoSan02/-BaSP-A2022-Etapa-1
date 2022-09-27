@@ -62,3 +62,58 @@ form a {
 .red-border {
     border: 3px solid red;
 }
+#name-error {
+    display: none;
+    font-size: 10px;
+    color: red;
+}
+#lastname-error {
+    display: none;
+    font-size: 10px;
+    color: red;
+}
+#id-error {
+    display: none;
+    font-size: 10px;
+    color: red;
+}
+#birth-date-error {
+    display: none;
+    font-size: 10px;
+    color: red;
+}
+#phone-error {
+    display: none;
+    font-size: 10px;
+    color: red;
+}
+#address-error {
+    display: none;
+    font-size: 10px;
+    color: red;
+}
+#location-error {
+    display: none;
+    font-size: 10px;
+    color: red;
+}
+#postal-code-error {
+    display: none;
+    font-size: 10px;
+    color: red;
+}
+#email-error {
+    display: none;
+    font-size: 10px;
+    color: red;
+}
+#password-error {
+    display: none;
+    font-size: 10px;
+    color: red;
+}
+#repeat-password-error {
+    display: none;
+    font-size: 10px;
+    color: red;
+}

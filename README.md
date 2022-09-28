@@ -26,15 +26,16 @@ Applied flexbox to make the layout responsive.
 ## Week 05: Javascript
 Completed Javascript blocks of exercises.
 ## Week 06: Javascript and DOM manipulation
-Applied Javascript to validate form and manipulate DOM
+Applied Javascript to validate form and manipulate DOM.
 
 ## Host links
 https://nicosan02.github.io/-BaSP-A2022-Etapa-1/Semana%2004/
 https://nicosan02.github.io/-BaSP-A2022-Etapa-1/Semana%2005/
+https://nicosan02.github.io/-BaSP-A2022-Etapa-1/Semana%2006/views/index.html
 
 ## Tech
 ```
-This project uses HTML to run on the browser and CSS for styling.
+This project uses HTML to run on the browser, CSS for styling and Javascript to work properly.
 ```
 
 ## Author 

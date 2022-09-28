@@ -25,6 +25,8 @@ Approached the styling of the HTML landing page made the previous week.
 Applied flexbox to make the layout responsive.
 ## Week 05: Javascript
 Completed Javascript blocks of exercises.
+## Week 06: Javascript and DOM manipulation
+Applied Javascript to validate form and manipulate DOM
 
 ## Host links
 https://nicosan02.github.io/-BaSP-A2022-Etapa-1/Semana%2004/

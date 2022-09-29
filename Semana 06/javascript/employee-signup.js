@@ -1,6 +1,6 @@
 var createButton = document.getElementById('create-button');
 var firstName = document.getElementById('formname');
-var firstNameValue = document.getElementById('formname').value;
+// var firstNameValue = document.getElementById('formname').value;
 var nameError = document.getElementById('name-error');
 var lastNameError = document.getElementById('lastname-error');
 var idError = document.getElementById('id-error');
@@ -14,19 +14,19 @@ var passwordError = document.getElementById('password-error');
 var passwordRepeatError = document.getElementById('repeat-password-error');
 var numberCheck = '0123456789';
 var textCheck = 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZÁÉÍÓÚabcdefghijklmnopqrstuvwxyzáéíóú';
-var errorMessage = [''];
-// var errorMessageName = '';
-// var errorMessageLastName = '';
-// var errorMessageId = '';
-// var errorMessageBirthDate = '';
-// var errorMessagePhoneNum = '';
-// var errorMessageAddress = '';
-// var errorMessageLocation = '';
-// var errorMessagePostalCode = '';
-// var errorMessageEmail = '';
-// var errorMessagePasswordrepeat = '';
-// var errorMessagePassword = '';
-// var successMessage = '';
+var errorMessage = '';
+var errorMessageName = '';
+var errorMessageLastName = '';
+var errorMessageId = '';
+var errorMessageBirthDate = '';
+var errorMessagePhoneNum = '';
+var errorMessageAddress = '';
+var errorMessageLocation = '';
+var errorMessagePostalCode = '';
+var errorMessageEmail = '';
+var errorMessagePasswordrepeat = '';
+var errorMessagePassword = '';
+var successMessage = '';
 //FIRST NAME VALIDATION
 
 var txtPattern = (/^[a-zA-Z]{4,30}$/);
@@ -35,7 +35,7 @@ var validateName = txtPattern.test(firstName.value);
 if (validateName !== true){
     nameError.setAttribute('style', 'display: block');
     firstName.classList.add('red-border');
-    errorMessage.push('Invalid First Name');
+    errorMessage = 'One or more inputs contain errors';
 } else {
     firstName.classList.remove('red-border');
     firstName.classList.add('green-border');    
@@ -59,31 +59,17 @@ firstName.onfocus = function() {
 }
 // LAST NAME VALIDATION
 var lastName = document.getElementById('formlastname');
-// var lastNameValue = document.getElementById('formlastname').value;
 lastName.onblur = function() {
 var validateLastName = txtPattern.test(lastName.value);
 if (validateLastName !== true) {
+    errorMessage = 'One or more inputs contain errors';
     lastNameError.setAttribute('style', 'display: block');
     lastName.classList.add('red-border');
 } else {
-    console.log('Valid Last Name');
+    // console.log('Valid Last Name');
     lastName.classList.remove('red-border');
     lastName.classList.add('green-border');
 }}
-//     if (lastName.value == ''){
-//     lastNameError.setAttribute('style', 'display: block');
-//     lastName.classList.add('red-border');
-// } else if (lastName.value.length < 3){
-//     lastNameError.setAttribute('style', 'display: block');
-//     lastName.classList.add('red-border');
-// } else if (!validateTxt()){
-//     lastNameError.setAttribute('style', 'display: block');
-// } else {
-//     alert('Valid Last Name');
-//     lastName.classList.remove('red-border');
-//     lastName.classList.add('green-border');
-// }
-// }
 lastName.onfocus = function() {
     lastName.classList.remove('green-border');
     lastName.classList.remove('red-border');
@@ -96,14 +82,17 @@ idDoc.onblur = function() {
     if (idDoc.value == ''){
     idError.setAttribute('style', 'display: block');
     idDoc.classList.add('red-border');
+    errorMessage = 'One or more inputs contain errors';
 } else if (idDoc.value.length < 7){
     idError.setAttribute('style', 'display: block');
     idDoc.classList.add('red-border');
+    errorMessage = 'One or more inputs contain errors';
 } else if (isNaN(idDocValue)){
+    errorMessage = 'One or more inputs contain errors';
     // console.log('NaN');
     idError.setAttribute('style', 'display: block');
 } else {
-    console.log('Valid ID');
+    // console.log('Valid ID');
     idDoc.classList.remove('red-border');
     idDoc.classList.add('green-border');
 }
@@ -115,15 +104,11 @@ idDoc.onfocus = function() {
 }
 //BIRTH DATE VALIDATION
 var birthDate = document.getElementById('formbirthdate');
-// var datePattern =  /^(0[1-9]|[12][0-9]|3[01])[- /.] (0[1-9]|1[012])[- /.]/;
 birthDate.onblur = function() {
-// var validateBirthDate= datePattern.test(birthDate.value);
     if (birthDate.value === ''){
     birthDateError.setAttribute('style', 'display: block');
     birthDate.classList.add('red-border');
-// } else if (validateBirthDate !== true){
-//     birthDateError.setAttribute('style', 'display: block');
-//     birthDate.classList.add('red-border');
+    errorMessage = 'One or more inputs contain errors';
 } else {
     console.log('Valid Birth Date');
     birthDate.classList.remove('red-border');
@@ -137,15 +122,17 @@ birthDate.onfocus = function() {
 }
 //PHONE NUMBER VALIDATION
 var phoneNum = document.getElementById('formphone');
-
 phoneNum.onblur = function() {
     if (phoneNum.value === ''){
     phoneError.setAttribute('style', 'display: block');
     phoneNum.classList.add('red-border');
+    errorMessage = 'One or more inputs contain errors';
 } else if (isNaN(phoneNum.value)){
     console.log('NaN');
     phoneError.setAttribute('style', 'display: block');
+    errorMessage = 'One or more inputs contain errors';
 }  else if (phoneNum.value.length < 10){
+    errorMessage = 'One or more inputs contain errors';
     phoneError.setAttribute('style', 'display: block');
     phoneNum.classList.add('red-border');
         return false;
@@ -173,9 +160,11 @@ function validateAddress (){
 }
 address.onblur = function() {
     if (address.value === ''){
+    errorMessage = 'One or more inputs contain errors';
     addressError.setAttribute('style', 'display: block');
     address.classList.add('red-border');
 } else if (!validateAddress(address.value)){
+    errorMessage = 'One or more inputs contain errors';
     addressError.setAttribute('style', 'display: block');
 } else {
     console.log('Valid Address');
@@ -202,8 +191,10 @@ locat.onblur = function() {
     if (locat.value == ''){
     locationError.setAttribute('style', 'display: block');
     locat.classList.add('red-border');
+    errorMessage = 'One or more inputs contain errors';
 } else if (!validatelocat()){
     locationError.setAttribute('style', 'display: block');
+    errorMessage = 'One or more inputs contain errors';
 } else {
     console.log('Valid location');
     locat.classList.remove('red-border');
@@ -221,11 +212,14 @@ postalCode.onblur = function() {
     if (postalCode.value == ''){
     postalCodeError.setAttribute('style', 'display: block');
     postalCode.classList.add('red-border');
+    errorMessage = 'One or more inputs contain errors';
 } else if (postalCode.value.length < 4 || postalCode.value.length > 5){
     postalCodeError.setAttribute('style', 'display: block');
     postalCode.classList.add('red-border');
+    errorMessage = 'One or more inputs contain errors';
 } else if (isNaN(postalCode.value)){
     postalCodeError.setAttribute('style', 'display: block');
+    errorMessage = 'One or more inputs contain errors';
 } else {
     console.log('Valid Postal Code');
     postalCode.classList.remove('red-border');
@@ -251,8 +245,10 @@ email.onblur = function() {
     if (email.value == ''){
     emailError.setAttribute('style', 'display: block');
     email.classList.add('red-border');
+    errorMessage = 'One or more inputs contain errors';
 } else if (!validateEmail()){
     emailError.setAttribute('style', 'display: block');
+    errorMessage = 'One or more inputs contain errors';
 } else {
     console.log('Valid Email');
     email.classList.remove('red-border');
@@ -272,12 +268,15 @@ var validatePass = passPattern.test(password.value);
 if (password.value == ''){
     passwordError.setAttribute('style', 'display: block');
     password.classList.add('red-border');
+    errorMessage = 'One or more inputs contain errors';
 } else if (password.value.length < 8){
     passwordError.setAttribute('style', 'display: block');
     password.classList.add('red-border');
+    errorMessage = 'One or more inputs contain errors';
 } else if (validatePass !== true){
     passwordError.setAttribute('style', 'display: block');
     password.classList.add('red-border');
+    errorMessage = 'One or more inputs contain errors';
 } else {
     console.log('Valid Password');
     password.classList.remove('red-border');
@@ -295,15 +294,16 @@ passwordRepeat.onblur = function() {
 var passPattern = /^[0-9a-zA-Z]/;
 var validatePassRepeat = passPattern.test(password.value);
     if (passwordRepeat.value == ''){
+    errorMessage = 'One or more inputs contain errors';
     passwordRepeatError.setAttribute('style', 'display: block');
     passwordRepeat.classList.add('red-border');
 } else if (passwordRepeat.value.length < 8){
     passwordRepeatError.setAttribute('style', 'display: block');
     passwordRepeat.classList.add('red-border');
+    errorMessage = 'One or more inputs contain errors';
 } else if (validatePassRepeat !== true){
     passwordRepeatError.setAttribute('style', 'display: block');
-// } else if (passwordRepeat != password){
-//     passwordRepeatError.setAttribute('style', 'display: block');
+    errorMessage = 'One or more inputs contain errors';
 } else {
     console.log('Valid Password');
     passwordRepeat.classList.remove('red-border');
@@ -342,14 +342,24 @@ passwordRepeat.onfocus = function() {
 //     errorMessagePasswordrepeat =' Invalid Password Repeat ';
 // } else {
 // var errorMessage = 'One or more input fields are invalid';
-var successMessage = 'Fisrt Name: ' + firstNameValue + '\nLast Name: ' + lastName.value 
-    + '\nID: ' + idDoc.value + '\nBirth Date: ' + birthDate.value + '\nPhone Number: ' + phoneNum.value +
-    '\nAddress: ' + address.value + '\nLocation: ' + locat.value + 'Postal Code: ' + postalCode.value +
-    '\nEmail: ' + email.value + '\nPassword: ' + password.value;
-// }}
+
+// var successMessage = 'Fisrt Name: ' + firstName.value + '\nLast Name: ' + lastName.value 
+//     + '\nID: ' + idDoc.value + '\nBirth Date: ' + birthDate.value + '\nPhone Number: ' + phoneNum.value +
+//     '\nAddress: ' + address.value + '\nLocation: ' + locat.value + 'Postal Code: ' + postalCode.value +
+//     '\nEmail: ' + email.value + '\nPassword: ' + password.value;
+
+// createButton.addEventListener('click', function(){
+//  alert('Fisrt Name: ' + firstName.value + '\nLast Name: ' + lastName.value 
+//  + '\nID: ' + idDoc.value + '\nBirth Date: ' + birthDate.value + '\nPhone Number: ' + phoneNum.value +
+//  '\nAddress: ' + address.value + '\nLocation: ' + locat.value + '\nPostal Code: ' + postalCode.value +
+//  '\nEmail: ' + email.value + '\nPassword: ' + password.value);})
+//  + '\nInput errors: ' + errorMessage['']
 createButton.addEventListener('click', function(){
- alert(successMessage, errorMessage);}
-)
+    alert(errorMessage + '\nFisrt Name: ' + firstName.value + '\nLast Name: ' + lastName.value 
+    + '\nID: ' + idDoc.value + '\nBirth Date: ' + birthDate.value + '\nPhone Number: ' + phoneNum.value +
+    '\nAddress: ' + address.value + '\nLocation: ' + locat.value + '\nPostal Code: ' + postalCode.value +
+    '\nEmail: ' + email.value + '\nPassword: ' + password.value);})
+
 // createButton.onclick = function() {
 //     alert(successMessage + errorMessageName + errorMessageLastName + errorMessageId + errorMessageBirthDate + 
 //         errorMessagePhoneNum + errorMessageAddress + errorMessageLocation + errorMessagePostalCode + errorMessageEmail + 

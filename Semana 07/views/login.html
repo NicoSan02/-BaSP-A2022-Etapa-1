@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta eformemail="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@500&display=swap');
+    </style>
+    <title>Login</title>
+    <link rel="stylereset" href="..\css\reset.css">
+    <link rel="stylesheet" href="..\css\styles.css">
+    <link rel="stylesheet" href="..\css\header.css">
+    <link rel="stylesheet" href="..\css\main.css">
+    <link rel="stylesheet" href="..\css\login.css">
+    <script defer src="..\javascript\login.js"></script>
+</head>
+<body>
+    <header>
+        <div id="login-header">
+            <h1><a href=".\index.html">Trackgenix</a></h1>
+            <p><a href=".\employee-signup.html">Sign up</a></p>
+        </div>
+    </header>
+    <main>
+        <form id="login-form">
+            <p id="login-title">Log In</p>
+            <div class="login-form-fields">
+                <fieldset class="email">
+                    <label for="formemail"><img src="..\assets\mail.svg" alt="mail-icon"></label>
+                    <input type="text" id="formemail" name="formemail" required>
+                    <p id="email-error">Invalid Email</p>
+                </fieldset>
+                <fieldset class="password">
+                    <label for="formpassword"><img src="..\assets\lock.svg" alt="password-icon"></label> 
+                    <input type="password" id="formpassword" name="formpassword" required>
+                    <p id="password-error">Invalid Password</p>
+                </fieldset>
+                <fieldset id="form-check">
+                    <input type="checkbox" id="formcheckbox" name="formcheckbox">
+                    <p class="login-p">Remember me</p>
+                </fieldset>
+            </div>
+            <div id="register-passforgoten">
+                <a href=".\employee-signup.html">Register here</a>
+                <a href="#">Forgot password?</a>
+            </div>
+            <fieldset>
+                <input type="submit" id="login-button" value="Log in">
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

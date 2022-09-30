@@ -86,38 +86,8 @@ loginButton.addEventListener("click", function(e) {
     console.log(email.value);
 }
 )
-function validateAll() {
-    return validateEmail(email.value) && validatePass(password.value) && password.value.length > 7;
-  }
-  var emailData = 'rose@radiumrocket.com'
-  var passData = 'BaSP2022'
-  var urlWithQP = 'https://basp-m2022-api-rest-server.herokuapp.com/login?email' + emailData + '&password' + passData
-
-  function submitInfo() {
-    if (validateAll	()) {
-      fetch(urlWithQP) 
-      .then (function (response) {
-        return response.json();
-      })
-      .then (function (data) {
-        if(data.success){
-          console.log(data);
-          var succesAlert = data.msg + '\n' + successMessage;
-          alert(succesAlert);
-        } else {
-          alert('Error')
-        }
-      })
-      .catch (function(error) {
-        alert('Not found');
-      });
-    } else {
-      alert('Rejected '+ successMessage);
-    }
-  }
-
 // alertMessage = errorMessage + successMessage;
-// loginButton.onclick = function() {
-//     alert(errorMessageEmail + errorMessagePassword + successMessage);
-// }
+loginButton.onclick = function() {
+    alert(errorMessageEmail + errorMessagePassword + successMessage);
+}
 

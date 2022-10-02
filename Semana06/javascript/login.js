@@ -81,13 +81,11 @@ loginButton.addEventListener("click", function() {
     errorMessagePassword = '';
     successMessage = ' Email: ' + email.value + ' Password: ' + password.value;
 }})
-loginButton.addEventListener("click", function(e) {
+
+
+  loginButton.addEventListener("click", function(e) {
     e.preventDefault();
     console.log(email.value);
 }
 )
-// alertMessage = errorMessage + successMessage;
-loginButton.onclick = function() {
-    alert(errorMessageEmail + errorMessagePassword + successMessage);
-}
 

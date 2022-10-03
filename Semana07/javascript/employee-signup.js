@@ -1,20 +1,11 @@
 window.onload = function () {
-    var createButton = document.getElementById('create-button');
     var firstName = document.getElementById('formname');
     var nameError = document.getElementById('name-error');
     var lastNameError = document.getElementById('lastname-error');
     var idError = document.getElementById('id-error');
-    var birthDateError = document.getElementById('birth-date-error');
-    var phoneError = document.getElementById('phone-error');
-    var addressError = document.getElementById('address-error');
-    var locationError = document.getElementById('location-error');
-    var postalCodeError = document.getElementById('postal-code-error');
-    var emailError = document.getElementById('email-error');
-    var passwordError = document.getElementById('password-error');
-    var passwordRepeatError = document.getElementById('repeat-password-error');
+    var errorMessage = [];
     // var numberCheck = '0123456789';
     // var textCheck = 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZÁÉÍÓÚabcdefghijklmnopqrstuvwxyzáéíóú';
-    var errorMessage = [];
     // var errorMessageName = '';
     // var errorMsgLastName = '';
     // var errorMessageId = '';
@@ -26,11 +17,11 @@ window.onload = function () {
     // var errorMsgEmail = '';
     // var errorMsgPassRepet = '';
     // var errorMessagePassword = '';
-    // var successMessage = '';
+    
 
     //FIRST NAME VALIDATION
     var txtPattern = (/^[a-zA-Z]{4,30}$/);
-    firstName.onblur = function() {
+    firstName.onblur = function validateFirstName () {
     var validateName = txtPattern.test(firstName.value);
     if (validateName !== true){
         nameError.setAttribute('style', 'display: block');
@@ -66,31 +57,49 @@ window.onload = function () {
     // ID VALIDATION 
     var idDoc = document.getElementById('formiddocument');
     var idDocValue = document.getElementById('formiddocument').value;
-    idDoc.onblur = function() {
-        if (idDoc.value == ''){
-        idError.setAttribute('style', 'display: block');
-        idDoc.classList.add('red-border');
-        errorMessage.push('Invalid ID ');
-    } else if (idDoc.value.length < 7){
-        idError.setAttribute('style', 'display: block');
-        idDoc.classList.add('red-border');
-        errorMessage.push('Invalid ID ');
-    } else if (isNaN(idDocValue)){
-        errorMessage.push('Invalid ID ');
-        idError.setAttribute('style', 'display: block');
-    } else {
-        idDoc.classList.remove('red-border');
-        idDoc.classList.add('green-border');
-    }
-    }
-    idDoc.onfocus = function() {
-        idDoc.classList.remove('green-border');
-        idDoc.classList.remove('red-border');
-        idError.setAttribute('style', 'display: none');
+    // idDoc.onblur = function() {
+    //     if (idDoc.value == ''){
+    //     idError.setAttribute('style', 'display: block');
+    //     idDoc.classList.add('red-border');
+    //     errorMessage.push('Invalid ID ');
+    // } else if (idDoc.value.length < 7){
+    //     idError.setAttribute('style', 'display: block');
+    //     idDoc.classList.add('red-border');
+    //     errorMessage.push('Invalid ID ');
+    // } else if (isNaN(idDocValue)){
+    //     errorMessage.push('Invalid ID ');
+    //     idError.setAttribute('style', 'display: block');
+    // } else {
+    //     idDoc.classList.remove('red-border');
+    //     idDoc.classList.add('green-border');
+    // }
+    // }
+    idDoc.onblur = function validateID () {
+        var idDoc = document.getElementById('formiddocument');
+        var idDoc = document.getElementById('formiddocument');
+        if (idDoc.value == '' || idDoc.value.length < 7 || isNaN(idDoc.value)) {
+            idError.setAttribute('style', 'display: block');
+            idDoc.classList.add('red-border');
+            errorMessage.push('Invalid ID ');
+        } else {
+            console.log('Valid ID');
+            idDoc.classList.remove('red-border');
+            idDoc.classList.add('green-border');
+        }
+        }
+        var idDoc = document.getElementById('formiddocument');
+        var idError = document.getElementById('id-error');
+        idDoc.onfocus = function() {
+            idDoc.classList.remove('green-border');
+            idDoc.classList.remove('red-border');
+            idError.setAttribute('style', 'display: none');
     }
     //BIRTH DATE VALIDATION
     var birthDate = document.getElementById('formbirthdate');
-    birthDate.onblur = function() {
+    var birthDateError = document.getElementById('birth-date-error');
+    // birthDateFormat = ^(1[0-2]|0[1-9])/(3[01]|[12][0-9]|0[1-9])/[0-9]{4}$;
+    // var validateDate = txtPattern.test(birthDate.value);
+    birthDate.onblur = function validateBirthDate () {
         if (birthDate.value === ''){
         birthDateError.setAttribute('style', 'display: block');
         birthDate.classList.add('red-border');
@@ -101,6 +110,7 @@ window.onload = function () {
         birthDate.classList.add('green-border');
     }
     }
+    var birthDateError = document.getElementById('birth-date-error');
     birthDate.onfocus = function() {
         birthDate.classList.remove('green-border');
         birthDate.classList.remove('red-border');
@@ -108,13 +118,13 @@ window.onload = function () {
     }
     //PHONE NUMBER VALIDATION
     var phoneNum = document.getElementById('formphone');
-    phoneNum.onblur = function() {
-        if (phoneNum.value === ''){
+    var phoneError = document.getElementById('phone-error');
+    phoneNum.onblur = function validatePhone() {
+        if (phoneNum.value == ''){
         phoneError.setAttribute('style', 'display: block');
         phoneNum.classList.add('red-border');
         errorMessage.push('Invalid Phone Number ');
     } else if (isNaN(phoneNum.value)){
-        console.log('NaN');
         phoneError.setAttribute('style', 'display: block');
         errorMessage.push('Invalid Phone Number ');
     }  else if (phoneNum.value.length < 10){
@@ -129,6 +139,7 @@ window.onload = function () {
         return true;
     }
     }
+    var phoneError = document.getElementById('phone-error');
     phoneNum.onfocus = function() {
         phoneNum.classList.remove('green-border');
         phoneNum.classList.remove('red-border');
@@ -144,6 +155,7 @@ window.onload = function () {
             return false;
         }
     }
+    var addressError = document.getElementById('address-error');
     address.onblur = function() {
         if (address.value === ''){
         errorMessage.push('Invalid Address ');
@@ -157,6 +169,7 @@ window.onload = function () {
         address.classList.add('green-border');
     }
     }
+    var addressError = document.getElementById('address-error');
     address.onfocus = function() {
         address.classList.remove('green-border');
         address.classList.remove('red-border');
@@ -172,6 +185,7 @@ window.onload = function () {
             return false;
         }
     }
+    var locationError = document.getElementById('location-error');
     locat.onblur = function() {
         if (locat.value == ''){
         locationError.setAttribute('style', 'display: block');
@@ -186,13 +200,15 @@ window.onload = function () {
     }
     }
     locat.onfocus = function() {
+        var locationError = document.getElementById('location-error');
         locat.classList.remove('green-border');
         locat.classList.remove('red-border');
         locationError.setAttribute('style', 'display: none');
     }
     //POSTAL CODE VALIDATION
     var postalCode = document.getElementById('formpostal-code');
-    postalCode.onblur = function() {
+    var postalCodeError = document.getElementById('postal-code-error');
+    postalCode.onblur = function validatePostCode () {
         if (postalCode.value == ''){
         postalCodeError.setAttribute('style', 'display: block');
         postalCode.classList.add('red-border');
@@ -210,6 +226,7 @@ window.onload = function () {
         postalCode.classList.add('green-border');
     }
     }
+    var postalCodeError = document.getElementById('postal-code-error');
     postalCode.onfocus = function() {
         postalCode.classList.remove('green-border');
         postalCode.classList.remove('red-border');
@@ -225,6 +242,7 @@ window.onload = function () {
             return false;
         }
     }
+    var emailError = document.getElementById('email-error');
     email.onblur = function() {
         if (email.value == ''){
         emailError.setAttribute('style', 'display: block');
@@ -246,7 +264,8 @@ window.onload = function () {
     }
     //PASSWORD VALIDATION
     var password = document.getElementById('formpassword');
-    password.onblur = function() {
+    var passwordError = document.getElementById('password-error');
+    password.onblur = function validatePassword() {
     var passPattern = /^[0-9a-zA-Z]/;
     var validatePass = passPattern.test(password.value);
     if (password.value == ''){
@@ -274,9 +293,10 @@ window.onload = function () {
     }
     //REPEAT PASSWORD VALIDATION
     var passwordRepeat = document.getElementById('formrepeatpassword');
-    passwordRepeat.onblur = function() {
+    var passwordRepeatError = document.getElementById('repeat-password-error');
+    passwordRepeat.onblur = function validatePassword2() {
     var passPattern = /^[0-9a-zA-Z]/;
-    var validatePassRepeat = passPattern.test(password.value);
+    var validatePassRepeat = passPattern.test(passwordRepeat.value);
         if (passwordRepeat.value == ''){
         errorMessage.push('Invalid Password repeat ');
         passwordRepeatError.setAttribute('style', 'display: block');
@@ -299,46 +319,60 @@ window.onload = function () {
         passwordRepeat.classList.remove('red-border');
         passwordRepeatError.setAttribute('style', 'display: none');
     }
-    // function validationErrors() {
-    // var validateName = txtPattern.test(firstName.value);
-    // var validateLastName = txtPattern.test(lastName.value);
-    //     if (firstName.value == '' || (validateName !== true)){
-    //     errorMessageName = ' Invalid First Name '; 
-    // } else if (lastName.value === '' || (validateLastName !== true)){
-    //     errorMsgLastName = ' Invalid Last Name ';
-    // } else if (idDoc.value === '' || (isNaN)){
-    //     errorMessageId = ' Invalid ID ';
-    // } else if (birthDate.value === '' || (!validateDate())){
-    //     errorMessageBirthDate = ' Invalid Birth Date ';
-    // } else if (phoneNum.value === '' || (isNaN)){
-    //sg = ' Invalid Phone Number ';
-    // } else if (address.value === '' || (!validateAddress())){
-    //     errorMessageAddress = ' Invalid Address ';
-    // } else if (locat.value === '' || (!validatelocat())){
-    //     errorMessageLocation = ' Invalid Location ';
-    // } else if (locat.value === '' || (!validatelocat())){
-    //     errorMsgPostalCode = ' Invalid Postal Code ';   
-    // } else if (email.value == '' || !validateEmail()) {
-    //    errorMsgEmail = ' Invalid Email ';
-    // } else if (password.value == '' || (!validatePass()) ){
-    //    errorMessagePassword =' Invalid Password ';
-    // } else if (password.value == '' || (!validatePass()) ){
-    //     errorMsgPassRepet =' Invalid Password Repeat ';
-    // } else {
-    // var errorMessage = 'One or more input fields are invalid';
-
-    // var successMessage = 'Fisrt Name: ' + firstName.value + '\nLast Name: ' + lastName.value 
-    //     + '\nID: ' + idDoc.value + '\nBirth Date: ' + birthDate.value + '\nPhone Number: ' + phoneNum.value +
-    //     '\nAddress: ' + address.value + '\nLocation: ' + locat.value + 'Postal Code: ' + postalCode.value +
-    //     '\nEmail: ' + email.value + '\nPassword: ' + password.value;
-
-    // createButton.addEventListener('click', function(){
-    //  alert('Fisrt Name: ' + firstName.value + '\nLast Name: ' + lastName.value 
-    //  + '\nID: ' + idDoc.value + '\nBirth Date: ' + birthDate.value + '\nPhone Number: ' + phoneNum.value +
-    //  '\nAddress: ' + address.value + '\nLocation: ' + locat.value + '\nPostal Code: ' + postalCode.value +
-    //  '\nEmail: ' + email.value + '\nPassword: ' + password.value);})
-    //  + '\nInput errors: ' + errorMessage['']
+    var txtPattern = (/^[a-zA-Z]{4,30}$/);
+    var firstName = document.getElementById('formname');
+    var lastName = document.getElementById('formlastname');
+    var validateName = txtPattern.test(firstName.value);
+    var validateLastName = txtPattern.test(lastName.value);
+    // function validateAll() {
+    //     if (validateName == true && validateLastName == true && validateID(idDoc.value) && validateBirthDate(birthDate.value)
+    //     && (phoneNum.value !== '') && validateAddress(address.value) && (locat.value.match(locatPattern))
+    //     && validatePostCode(postalCode.value) && validateEmail(email.value) && validatePassword(password.value) && validatePassword2(passwordRepeat.value)) {
+    //     return true;
+        
+    // }}
+    var createButton = document.getElementById('create-button');
+    var firstName = document.getElementById('formname');
+    createButton.addEventListener('click', function() {
+        var birthDate2 = birthDate.value.split('-')
+        var birthDateValid = birthDate2[1] + '/' + birthDate2[2] + '/' + birthDate2[0];
+        if (errorMessage.length < 1) {
+             var urlWithQP = `https://basp-m2022-api-rest-server.herokuapp.com/signup?name=${firstName.value}&lastName=${lastName.value}&dni=${idDoc.value}&dob=${birthDateValid}&phone=${phoneNum.value}&address=${address.value}&city=${locat.value}&zip=${postalCode.value}&email=${email.value}&password=${password.value}&password=${passwordRepeat.value}`;
+            fetch(urlWithQP)
+                .then(function (response){
+                return response.json()
+                })
+                .then(function (data) {
+                if(data.success == true) {
+                    console.log(data)
+                    localStorage.setItem('formname', firstName.value);
+                    localStorage.setItem('formlastname', lastName.value);
+                    localStorage.setItem('formiddocument', idDoc.value);
+                    localStorage.setItem('formbirthdate', birthDate.value);
+                    localStorage.setItem('formphone', phoneNum.value);
+                    localStorage.setItem('formaddress', address.value);
+                    localStorage.setItem('formlocation', locat.value);
+                    localStorage.setItem('formpostal-code', postalCode.value);
+                    localStorage.setItem('formemail', email.value);
+                    localStorage.setItem('formpassword', password.value);
+                    localStorage.setItem('formrepeatpassword', passwordRepeat.value);
+                }})
+                .catch(function (error) {
+                console.log(error);
+            })} else {
+            alert('Request error' + errorMessage + '\nFisrt Name: ' + firstName.value + '\nLast Name: ' + lastName.value 
+                    + '\nID: ' + idDoc.value + '\nBirth Date: ' + birthDate.value + '\nPhone Number: ' + phoneNum.value +
+                    '\nAddress: ' + address.value + '\nLocation: ' + locat.value + '\nPostal Code: ' + postalCode.value +
+                    '\nEmail: ' + email.value + '\nPassword: ' + password.value);
+                }})
+        var successMessage = '';
+        createButton.onclick = function() {
+            alert(errorMessage + successMessage);
+        }
+    var createButton = document.getElementById('create-button');
+    var firstName = document.getElementById('formname');
     createButton.addEventListener('click', function(){
+        var errorMessage = [];
         alert(errorMessage + '\nFisrt Name: ' + firstName.value + '\nLast Name: ' + lastName.value 
         + '\nID: ' + idDoc.value + '\nBirth Date: ' + birthDate.value + '\nPhone Number: ' + phoneNum.value +
         '\nAddress: ' + address.value + '\nLocation: ' + locat.value + '\nPostal Code: ' + postalCode.value +

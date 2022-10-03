@@ -25,7 +25,7 @@ window.onload = function () {
         emailError.setAttribute("style", "display: block");
         email.classList.add("red-border");
     } else {
-        console.log('Valid Email');
+        // console.log('Valid Email');
         email.classList.remove("red-border");
         email.classList.add("green-border");
     }
@@ -54,7 +54,7 @@ window.onload = function () {
         passwordError.setAttribute("style", "display: block");
         password.classList.add("red-border");
     } else {
-        console.log('Valid Password')
+        // console.log('Valid Password')
         password.classList.remove("red-border");
         password.classList.add("green-border");
     }

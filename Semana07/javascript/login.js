@@ -25,7 +25,6 @@ window.onload = function () {
         emailError.setAttribute("style", "display: block");
         email.classList.add("red-border");
     } else {
-        // console.log('Valid Email');
         email.classList.remove("red-border");
         email.classList.add("green-border");
     }
@@ -99,7 +98,7 @@ loginButton.addEventListener('click', function() {
     })} else {
         alert('Invalid: please check inputs');
     }
-})
+    })
     loginButton.onclick = function() {
         alert(errorMsgEmail + errorMsgPassword + successMessage);
     }

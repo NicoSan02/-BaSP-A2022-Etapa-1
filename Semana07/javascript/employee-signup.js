@@ -3,21 +3,7 @@ window.onload = function () {
     var nameError = document.getElementById('name-error');
     var lastNameError = document.getElementById('lastname-error');
     var idError = document.getElementById('id-error');
-    var errorMessage = [];
-    // var numberCheck = '0123456789';
-    // var textCheck = 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZÁÉÍÓÚabcdefghijklmnopqrstuvwxyzáéíóú';
-    // var errorMessageName = '';
-    // var errorMsgLastName = '';
-    // var errorMessageId = '';
-    // var errorMessageBirthDate = '';
-    // var errorMsgPhoneNum = '';
-    // var errorMessageAddress = '';
-    // var errorMessageLocation = '';
-    // var errorMsgPostalCode = '';
-    // var errorMsgEmail = '';
-    // var errorMsgPassRepet = '';
-    // var errorMessagePassword = '';
-    
+    var errorMessage = [];  
 
     //FIRST NAME VALIDATION
     var txtPattern = (/^[a-zA-Z]{4,30}$/);
@@ -56,7 +42,6 @@ window.onload = function () {
     }
     // ID VALIDATION 
     var idDoc = document.getElementById('formiddocument');
-    var idDocValue = document.getElementById('formiddocument').value;
     // idDoc.onblur = function() {
     //     if (idDoc.value == ''){
     //     idError.setAttribute('style', 'display: block');
@@ -97,8 +82,6 @@ window.onload = function () {
     //BIRTH DATE VALIDATION
     var birthDate = document.getElementById('formbirthdate');
     var birthDateError = document.getElementById('birth-date-error');
-    // birthDateFormat = ^(1[0-2]|0[1-9])/(3[01]|[12][0-9]|0[1-9])/[0-9]{4}$;
-    // var validateDate = txtPattern.test(birthDate.value);
     birthDate.onblur = function validateBirthDate () {
         if (birthDate.value === ''){
         birthDateError.setAttribute('style', 'display: block');
@@ -119,7 +102,7 @@ window.onload = function () {
     //PHONE NUMBER VALIDATION
     var phoneNum = document.getElementById('formphone');
     var phoneError = document.getElementById('phone-error');
-    phoneNum.onblur = function validatePhone() {
+    phoneNum.onblur = function validatePhone () {
         if (phoneNum.value == ''){
         phoneError.setAttribute('style', 'display: block');
         phoneNum.classList.add('red-border');
@@ -322,15 +305,6 @@ window.onload = function () {
     var txtPattern = (/^[a-zA-Z]{4,30}$/);
     var firstName = document.getElementById('formname');
     var lastName = document.getElementById('formlastname');
-    var validateName = txtPattern.test(firstName.value);
-    var validateLastName = txtPattern.test(lastName.value);
-    // function validateAll() {
-    //     if (validateName == true && validateLastName == true && validateID(idDoc.value) && validateBirthDate(birthDate.value)
-    //     && (phoneNum.value !== '') && validateAddress(address.value) && (locat.value.match(locatPattern))
-    //     && validatePostCode(postalCode.value) && validateEmail(email.value) && validatePassword(password.value) && validatePassword2(passwordRepeat.value)) {
-    //     return true;
-        
-    // }}
     var createButton = document.getElementById('create-button');
     var firstName = document.getElementById('formname');
     createButton.addEventListener('click', function() {
